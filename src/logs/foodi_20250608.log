@@ -1,0 +1,1512 @@
+[2025-06-08 12:47:50] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-08 12:47:50] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 12:47:50] INFO in _internal:  * Restarting with stat
+[2025-06-08 12:47:51] WARNING in _internal:  * Debugger is active!
+[2025-06-08 12:47:51] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-08 12:48:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 12:48:24] "GET / HTTP/1.1" 200 -
+[2025-06-08 12:48:25] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 12:48:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 12:48:47] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 12:48:47] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 12:51:25] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 12:51:25] "GET / HTTP/1.1" 200 -
+[2025-06-08 12:51:27] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 12:51:27] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 13:03:52] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 13:03:52] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 13:03:52] INFO in _internal:  * Restarting with stat
+[2025-06-08 13:03:54] WARNING in _internal:  * Debugger is active!
+[2025-06-08 13:03:54] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 13:04:31] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:04:31] "GET / HTTP/1.1" 200 -
+[2025-06-08 13:04:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:04:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 13:04:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:04:39] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 13:05:11] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 13:05:11] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:05:11] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 13:10:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:10:46] "GET /history HTTP/1.1" 200 -
+[2025-06-08 13:15:02] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:15:02] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 13:15:07] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:15:07] "GET /history HTTP/1.1" 200 -
+[2025-06-08 13:30:04] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:30:04] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-08 13:35:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:35:29] "GET / HTTP/1.1" 200 -
+[2025-06-08 13:35:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:35:41] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 13:36:10] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 13:36:10] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:36:10] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 13:37:38] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 13:37:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:37:38] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 13:39:14] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:39:14] "GET / HTTP/1.1" 200 -
+[2025-06-08 13:40:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:40:39] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 13:40:50] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 13:40:51] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:40:51] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 13:41:07] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:41:07] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-08 13:41:09] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:41:09] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 13:41:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:41:49] "GET /history HTTP/1.1" 200 -
+[2025-06-08 13:42:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:42:00] "GET / HTTP/1.1" 200 -
+[2025-06-08 13:42:06] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:42:06] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 13:42:07] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:42:07] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-08 13:42:08] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:42:08] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 13:42:09] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:42:09] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 13:42:59] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:42:59] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-08 13:42:59] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:42:59] "GET /history HTTP/1.1" 200 -
+[2025-06-08 13:43:02] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:43:02] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 13:43:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:43:46] "GET /history HTTP/1.1" 200 -
+[2025-06-08 13:44:34] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:44:34] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 13:49:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:49:26] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-08 13:49:27] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:49:27] "GET / HTTP/1.1" 200 -
+[2025-06-08 13:49:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:49:39] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 13:49:40] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:49:40] "GET /history HTTP/1.1" 200 -
+[2025-06-08 13:51:25] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:51:25] "GET /history HTTP/1.1" 200 -
+[2025-06-08 13:59:14] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 13:59:14] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 13:59:14] INFO in _internal:  * Restarting with stat
+[2025-06-08 13:59:15] WARNING in _internal:  * Debugger is active!
+[2025-06-08 13:59:15] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 13:59:21] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 13:59:21] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:00:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:00:46] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 14:00:57] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:00:57] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 14:01:06] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 14:01:06] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:01:06] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 14:01:48] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 14:01:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:01:48] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 14:02:10] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:02:10] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-08 14:02:11] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:02:11] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 14:02:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:02:55] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:06:01] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 14:06:01] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 14:06:01] INFO in _internal:  * Restarting with stat
+[2025-06-08 14:06:01] WARNING in _internal:  * Debugger is active!
+[2025-06-08 14:06:01] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 14:06:04] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:06:04] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:06:34] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:06:34] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 14:06:42] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 14:06:42] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:06:42] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 14:07:14] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:07:14] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:09:29] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 14:09:29] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 14:09:29] INFO in _internal:  * Restarting with stat
+[2025-06-08 14:09:29] WARNING in _internal:  * Debugger is active!
+[2025-06-08 14:09:29] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 14:09:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:09:33] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:11:51] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:11:51] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-08 14:11:57] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:11:57] "GET /restaurants?search=한우&category= HTTP/1.1" 200 -
+[2025-06-08 14:12:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:12:00] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-08 14:15:21] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 14:15:21] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 14:15:21] INFO in _internal:  * Restarting with stat
+[2025-06-08 14:15:22] WARNING in _internal:  * Debugger is active!
+[2025-06-08 14:15:22] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 14:15:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:15:28] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-08 14:15:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:15:29] "GET / HTTP/1.1" 200 -
+[2025-06-08 14:16:27] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 14:16:27] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 14:16:27] INFO in _internal:  * Restarting with stat
+[2025-06-08 14:16:27] WARNING in _internal:  * Debugger is active!
+[2025-06-08 14:16:27] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 14:16:31] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:16:31] "GET / HTTP/1.1" 200 -
+[2025-06-08 14:18:37] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 14:18:37] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 14:18:37] INFO in _internal:  * Restarting with stat
+[2025-06-08 14:18:37] WARNING in _internal:  * Debugger is active!
+[2025-06-08 14:18:37] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 14:18:43] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:18:43] "GET / HTTP/1.1" 200 -
+[2025-06-08 14:18:44] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:18:44] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 14:18:51] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:18:51] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:24:43] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 14:24:43] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 14:24:43] INFO in _internal:  * Restarting with stat
+[2025-06-08 14:24:43] WARNING in _internal:  * Debugger is active!
+[2025-06-08 14:24:43] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 14:24:50] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:24:50] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:24:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:24:55] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 14:25:10] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:25:10] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:25:11] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:25:11] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-08 14:27:04] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 14:27:04] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 14:27:04] INFO in _internal:  * Restarting with stat
+[2025-06-08 14:27:04] WARNING in _internal:  * Debugger is active!
+[2025-06-08 14:27:04] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 14:27:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:27:24] "GET / HTTP/1.1" 200 -
+[2025-06-08 14:27:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:27:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 14:27:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:27:26] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:32:40] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 14:32:40] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 14:32:40] INFO in _internal:  * Restarting with stat
+[2025-06-08 14:32:41] WARNING in _internal:  * Debugger is active!
+[2025-06-08 14:32:41] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 14:32:53] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:32:53] "GET / HTTP/1.1" 200 -
+[2025-06-08 14:32:53] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:32:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 14:32:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:32:55] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:33:02] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:33:02] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-08 14:35:06] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 14:35:06] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 14:35:06] INFO in _internal:  * Restarting with stat
+[2025-06-08 14:35:06] WARNING in _internal:  * Debugger is active!
+[2025-06-08 14:35:06] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 14:35:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:35:26] "GET / HTTP/1.1" 200 -
+[2025-06-08 14:35:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:35:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 14:35:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:35:28] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:35:45] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:35:45] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 14:36:25] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:36:25] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 14:36:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:36:26] "GET / HTTP/1.1" 200 -
+[2025-06-08 14:36:27] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:36:27] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:36:56] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:36:56] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 14:37:02] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 14:37:02] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:37:02] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 14:38:52] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:38:52] "GET /history HTTP/1.1" 200 -
+[2025-06-08 14:56:57] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 14:56:57] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 14:56:57] INFO in _internal:  * Restarting with stat
+[2025-06-08 14:56:58] WARNING in _internal:  * Debugger is active!
+[2025-06-08 14:56:58] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 14:57:06] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:57:06] "GET / HTTP/1.1" 200 -
+[2025-06-08 14:57:07] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:57:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 14:57:09] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:57:09] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 14:57:19] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 14:57:20] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:57:20] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 14:57:25] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 14:57:25] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 15:13:53] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 15:13:53] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 15:13:53] INFO in _internal:  * Restarting with stat
+[2025-06-08 15:13:54] WARNING in _internal:  * Debugger is active!
+[2025-06-08 15:13:54] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 15:14:04] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:14:04] "GET / HTTP/1.1" 200 -
+[2025-06-08 15:14:04] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:14:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 15:14:06] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:14:06] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 15:14:15] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 15:14:15] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:14:15] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 15:14:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:14:22] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 15:14:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:14:29] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 15:16:13] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 15:16:13] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 15:16:13] INFO in _internal:  * Restarting with stat
+[2025-06-08 15:16:14] WARNING in _internal:  * Debugger is active!
+[2025-06-08 15:16:14] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 15:16:15] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:16:15] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 15:16:24] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 15:16:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:16:24] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 15:16:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:16:29] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 15:16:42] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 15:16:42] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:16:42] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 15:16:51] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:16:51] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 15:16:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:16:54] "GET /history HTTP/1.1" 200 -
+[2025-06-08 15:16:58] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:16:58] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 15:17:08] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 15:17:08] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:17:08] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 15:17:15] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:17:15] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 15:19:21] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 15:19:21] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 15:19:21] INFO in _internal:  * Restarting with stat
+[2025-06-08 15:19:22] WARNING in _internal:  * Debugger is active!
+[2025-06-08 15:19:22] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 15:19:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:19:26] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 15:19:37] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 15:19:37] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:19:37] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 15:19:43] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:19:43] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 15:21:10] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:21:10] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 15:24:27] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 15:24:27] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 15:24:27] INFO in _internal:  * Restarting with stat
+[2025-06-08 15:24:27] WARNING in _internal:  * Debugger is active!
+[2025-06-08 15:24:27] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 15:24:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:24:30] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 15:24:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:24:33] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 15:30:27] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 15:30:27] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 15:30:27] INFO in _internal:  * Restarting with stat
+[2025-06-08 15:30:28] WARNING in _internal:  * Debugger is active!
+[2025-06-08 15:30:28] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 15:30:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:30:32] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 15:33:36] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 15:33:36] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 15:33:36] INFO in _internal:  * Restarting with stat
+[2025-06-08 15:33:37] WARNING in _internal:  * Debugger is active!
+[2025-06-08 15:33:37] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 15:33:44] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:33:44] "GET / HTTP/1.1" 200 -
+[2025-06-08 15:33:44] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:33:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 15:33:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:33:46] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 15:33:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:33:46] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 15:35:56] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 15:35:56] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 15:35:56] INFO in _internal:  * Restarting with stat
+[2025-06-08 15:35:57] WARNING in _internal:  * Debugger is active!
+[2025-06-08 15:35:57] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 15:36:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:36:00] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 15:36:36] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:36:36] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 15:42:20] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 15:42:20] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 15:42:20] INFO in _internal:  * Restarting with stat
+[2025-06-08 15:42:21] WARNING in _internal:  * Debugger is active!
+[2025-06-08 15:42:21] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 15:42:31] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:42:31] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 15:44:26] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 15:44:26] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 15:44:26] INFO in _internal:  * Restarting with stat
+[2025-06-08 15:44:26] WARNING in _internal:  * Debugger is active!
+[2025-06-08 15:44:26] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 15:44:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:44:33] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 15:44:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:44:46] "GET /history HTTP/1.1" 200 -
+[2025-06-08 15:46:06] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:46:06] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 15:46:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:46:38] "GET / HTTP/1.1" 200 -
+[2025-06-08 15:46:47] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:46:47] "GET / HTTP/1.1" 200 -
+[2025-06-08 15:46:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:46:48] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 15:48:31] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 15:48:31] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:48:31] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 15:48:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:48:55] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 15:49:42] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 15:49:42] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 16:23:00] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 16:23:00] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 16:23:00] INFO in _internal:  * Restarting with stat
+[2025-06-08 16:23:01] WARNING in _internal:  * Debugger is active!
+[2025-06-08 16:23:01] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 16:23:11] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:23:11] "GET / HTTP/1.1" 200 -
+[2025-06-08 16:23:11] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:23:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 16:23:16] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:23:16] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 16:23:21] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:23:21] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 16:23:37] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:23:37] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 16:23:37] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:23:37] "GET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2025-06-08 16:23:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:23:38] "GET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2025-06-08 16:23:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:23:38] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=lvaqpjpeVbjuG0LEnqLC HTTP/1.1" 200 -
+[2025-06-08 16:23:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:23:38] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2025-06-08 16:24:37] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:24:37] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 16:24:44] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:24:44] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 16:24:44] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:24:44] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 16:24:44] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:24:44] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 16:24:45] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:24:45] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=lvaqpjpeVbjuG0LEnqLC HTTP/1.1[0m" 304 -
+[2025-06-08 16:24:45] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:24:45] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 16:26:42] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 16:26:42] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 16:26:42] INFO in _internal:  * Restarting with stat
+[2025-06-08 16:26:43] WARNING in _internal:  * Debugger is active!
+[2025-06-08 16:26:43] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 16:26:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:26:46] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 16:26:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:26:55] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 16:26:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:26:55] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 16:26:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:26:55] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 16:26:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:26:55] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=xcBsO3NhmBlxZLHnQIaN HTTP/1.1" 200 -
+[2025-06-08 16:26:56] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:26:56] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 16:41:27] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 16:41:27] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 16:41:27] INFO in _internal:  * Restarting with stat
+[2025-06-08 16:41:28] WARNING in _internal:  * Debugger is active!
+[2025-06-08 16:41:28] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 16:41:31] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:41:31] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 16:41:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:41:41] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 16:41:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:41:41] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 16:41:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:41:41] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 16:41:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:41:41] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=cYnwjoYiXQgdTE3Wq1W6 HTTP/1.1" 200 -
+[2025-06-08 16:41:42] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:41:42] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 16:43:30] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 16:43:30] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 16:43:30] INFO in _internal:  * Restarting with stat
+[2025-06-08 16:43:31] WARNING in _internal:  * Debugger is active!
+[2025-06-08 16:43:31] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 16:43:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:43:33] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 16:43:40] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:43:40] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 16:43:40] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:43:40] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 16:43:40] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:43:40] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 16:43:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:43:41] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=Oynw1FQXDbGeL0WdtAL5 HTTP/1.1" 200 -
+[2025-06-08 16:43:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:43:41] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 16:44:47] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 16:44:47] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 16:44:47] INFO in _internal:  * Restarting with stat
+[2025-06-08 16:44:48] WARNING in _internal:  * Debugger is active!
+[2025-06-08 16:44:48] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 16:44:51] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:44:51] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 16:44:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:44:55] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 16:44:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:44:55] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 16:44:56] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:44:56] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 16:44:56] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:44:56] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=NvZ0d5fLrlvpDQL2tZ5I HTTP/1.1" 200 -
+[2025-06-08 16:44:56] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:44:56] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 16:46:14] INFO in _internal: 192.168.219.103 - - [08/Jun/2025 16:46:14] "GET / HTTP/1.1" 200 -
+[2025-06-08 16:46:25] INFO in _internal: 192.168.219.103 - - [08/Jun/2025 16:46:25] "[31m[1mGET / HTTP/1.1[0m" 400 -
+[2025-06-08 16:46:25] INFO in _internal: 192.168.219.103 - - [08/Jun/2025 16:46:25] "[33mGET /loginMsg.js HTTP/1.1[0m" 404 -
+[2025-06-08 16:46:25] INFO in _internal: 192.168.219.103 - - [08/Jun/2025 16:46:25] "[33mGET /cgi/get.cgi?cmd=home_login HTTP/1.1[0m" 404 -
+[2025-06-08 16:46:50] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 16:46:50] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 16:46:50] INFO in _internal:  * Restarting with stat
+[2025-06-08 16:46:50] WARNING in _internal:  * Debugger is active!
+[2025-06-08 16:46:50] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 16:46:53] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:46:53] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 16:46:58] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:46:58] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 16:46:58] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:46:58] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 16:46:58] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:46:58] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 16:46:59] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:46:59] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=sgJ7eKpbyuxOC8QDPqaW HTTP/1.1" 200 -
+[2025-06-08 16:46:59] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:46:59] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 16:47:31] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:47:31] "GET / HTTP/1.1" 200 -
+[2025-06-08 16:47:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:47:33] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 16:47:39] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 16:47:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:47:39] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 16:47:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:47:46] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 16:49:26] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 16:49:26] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 16:49:26] INFO in _internal:  * Restarting with stat
+[2025-06-08 16:49:27] WARNING in _internal:  * Debugger is active!
+[2025-06-08 16:49:27] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 16:49:31] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:49:31] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 16:49:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:49:33] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 16:49:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:49:38] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 16:49:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:49:38] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 16:49:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:49:38] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 16:49:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:49:39] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=F929HGP24swO1N7uiuHh HTTP/1.1" 200 -
+[2025-06-08 16:49:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:49:39] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 16:52:40] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 16:52:40] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 16:52:40] INFO in _internal:  * Restarting with stat
+[2025-06-08 16:52:41] WARNING in _internal:  * Debugger is active!
+[2025-06-08 16:52:41] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 16:52:43] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:52:43] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 16:52:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:52:48] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 16:52:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:52:48] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 16:52:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:52:48] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 16:52:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:52:48] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=i8InzTsAVWPOwOr2DGV7 HTTP/1.1" 200 -
+[2025-06-08 16:52:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:52:49] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 16:55:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:55:29] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 16:55:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:55:29] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 16:55:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:55:29] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 16:55:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:55:30] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=i8InzTsAVWPOwOr2DGV7 HTTP/1.1[0m" 304 -
+[2025-06-08 16:55:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 16:55:30] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 17:01:49] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:01:49] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:01:49] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:01:50] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:01:50] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 17:01:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:01:54] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 17:01:59] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:01:59] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 17:01:59] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:01:59] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 17:02:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:02:00] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 17:02:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:02:00] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=HVCMYyjPOf9w670pvJxC HTTP/1.1" 200 -
+[2025-06-08 17:02:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:02:00] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 17:07:35] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:07:35] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:07:35] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:07:36] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:07:36] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 17:07:40] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:07:40] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 17:07:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:07:49] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 17:07:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:07:49] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 17:07:50] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:07:50] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 17:07:50] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:07:50] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=G7rZNz8ELkq4E4w6dtfk HTTP/1.1" 200 -
+[2025-06-08 17:07:50] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:07:50] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 17:08:12] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:08:12] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:08:12] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:08:12] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:08:12] INFO in _internal:  * Debugger PIN: 772-336-911
+[2025-06-08 17:08:21] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:08:21] "GET / HTTP/1.1" 200 -
+[2025-06-08 17:08:21] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:08:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 17:08:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:08:24] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 17:08:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:08:41] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 17:18:08] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:18:08] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:18:08] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:18:09] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:18:09] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 17:18:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:18:22] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 17:18:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:18:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 17:18:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:18:32] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 17:18:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:18:32] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 17:18:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:18:32] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 17:18:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:18:33] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=m36qpnMinDaSLddMiYfg HTTP/1.1" 200 -
+[2025-06-08 17:18:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:18:33] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 17:20:44] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:20:44] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:20:44] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:20:45] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:20:45] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 17:20:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:20:48] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 17:20:53] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:20:53] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 17:20:53] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:20:53] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 17:20:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:20:54] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 17:20:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:20:54] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=M4CET4et23dXIik7imod HTTP/1.1" 200 -
+[2025-06-08 17:20:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:20:54] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 17:22:22] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:22:22] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:22:22] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:22:23] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:22:23] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 17:22:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:22:28] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 17:22:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:22:32] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 17:22:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:22:32] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 17:22:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:22:32] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 17:22:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:22:32] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=tpH5NKrewlSpqHS55vSh HTTP/1.1" 200 -
+[2025-06-08 17:22:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:22:32] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 17:23:32] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:23:32] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:23:32] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:23:32] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:23:32] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 17:23:35] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:23:35] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 17:23:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:23:41] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 17:23:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:23:41] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 17:23:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:23:41] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 17:23:42] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:23:42] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=4YglsATXdrwzTGemLKkH HTTP/1.1" 200 -
+[2025-06-08 17:23:42] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:23:42] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 17:26:52] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:26:52] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:26:52] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:26:53] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:26:53] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 17:26:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:26:55] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 17:26:59] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:26:59] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 17:26:59] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:26:59] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 17:27:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:27:00] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 17:27:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:27:00] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=QX86vCjjyRzhbQZeJOSZ HTTP/1.1" 200 -
+[2025-06-08 17:27:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:27:00] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 17:28:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:28:54] "GET / HTTP/1.1" 200 -
+[2025-06-08 17:28:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:28:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 17:29:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:29:23] "GET /history HTTP/1.1" 200 -
+[2025-06-08 17:29:58] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:29:58] "GET /history HTTP/1.1" 200 -
+[2025-06-08 17:30:04] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:30:04] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 17:30:16] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 17:30:16] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:30:16] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 17:30:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:30:23] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 17:31:56] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:31:56] "GET /history HTTP/1.1" 200 -
+[2025-06-08 17:32:27] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:32:27] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 17:38:27] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:38:27] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:38:27] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:38:28] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:38:28] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 17:38:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:38:32] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 17:38:41] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 17:38:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:38:41] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 17:38:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:38:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 17:38:52] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:38:52] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 17:39:57] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:39:57] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:39:57] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:39:58] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:39:58] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 17:40:04] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:40:04] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 17:40:15] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 17:40:15] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:40:15] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 17:40:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:40:22] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 17:41:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:41:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 17:43:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:43:54] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 17:45:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:45:39] "GET /history HTTP/1.1" 200 -
+[2025-06-08 17:45:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:45:39] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 17:45:45] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:45:45] "GET / HTTP/1.1" 200 -
+[2025-06-08 17:45:45] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:45:45] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 17:45:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:45:55] "GET /history HTTP/1.1" 200 -
+[2025-06-08 17:45:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:45:55] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 17:46:05] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:46:05] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 17:46:05] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:46:05] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 17:46:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:46:30] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 17:46:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:46:30] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 17:46:38] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 17:46:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:46:38] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 17:47:24] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:47:24] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:47:24] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:47:25] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:47:25] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 17:47:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:47:33] "GET / HTTP/1.1" 200 -
+[2025-06-08 17:47:34] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:47:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 17:47:35] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:47:35] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 17:47:48] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 17:47:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:47:48] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 17:48:02] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:48:02] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 17:50:26] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 17:50:26] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 17:50:26] INFO in _internal:  * Restarting with stat
+[2025-06-08 17:50:27] WARNING in _internal:  * Debugger is active!
+[2025-06-08 17:50:27] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 17:50:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:50:30] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 17:50:38] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 17:50:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:50:38] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 17:50:44] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:50:44] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 17:50:53] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:50:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 17:54:59] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:54:59] "GET /history HTTP/1.1" 200 -
+[2025-06-08 17:54:59] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:54:59] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 17:55:06] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:55:06] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 17:55:07] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:55:07] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 17:55:18] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:55:18] "GET /history HTTP/1.1" 200 -
+[2025-06-08 17:55:18] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 17:55:18] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 18:00:14] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 18:00:14] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 18:00:14] INFO in _internal:  * Restarting with stat
+[2025-06-08 18:00:15] WARNING in _internal:  * Debugger is active!
+[2025-06-08 18:00:15] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 18:00:20] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:00:20] "GET /history HTTP/1.1" 200 -
+[2025-06-08 18:00:20] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:00:20] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 18:00:27] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 18:00:27] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:00:27] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 18:00:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:00:33] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 18:00:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:00:41] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 18:00:44] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:00:44] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 18:02:02] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 18:02:02] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 18:02:02] INFO in _internal:  * Restarting with stat
+[2025-06-08 18:02:03] WARNING in _internal:  * Debugger is active!
+[2025-06-08 18:02:03] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 18:02:12] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:02:12] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 18:02:13] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:02:13] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 18:02:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:02:23] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 18:02:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:02:24] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:02:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:02:24] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 18:02:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:02:24] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=i9Dk5nXRaBE1y3KnGJy9 HTTP/1.1" 200 -
+[2025-06-08 18:02:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:02:24] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 18:02:35] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:02:35] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:02:35] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:02:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 18:15:44] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 18:15:44] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 18:15:44] INFO in _internal:  * Restarting with stat
+[2025-06-08 18:15:45] WARNING in _internal:  * Debugger is active!
+[2025-06-08 18:15:45] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 18:15:47] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:15:47] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 18:15:51] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:15:51] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 18:15:51] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:15:51] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:15:51] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:15:51] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 18:15:52] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:15:52] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=zidsidbzV9oCllChiQk8 HTTP/1.1" 200 -
+[2025-06-08 18:15:52] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:15:52] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 18:16:28] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 18:16:28] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 18:16:28] INFO in _internal:  * Restarting with stat
+[2025-06-08 18:16:29] WARNING in _internal:  * Debugger is active!
+[2025-06-08 18:16:29] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 18:16:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:16:32] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 18:16:35] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:16:35] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 18:16:35] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:16:35] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:16:36] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:16:36] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 18:16:36] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:16:36] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=Hnm7gCYCgOYhT5rdTMU5 HTTP/1.1" 200 -
+[2025-06-08 18:16:36] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:16:36] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 18:21:14] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 18:21:14] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 18:21:14] INFO in _internal:  * Restarting with stat
+[2025-06-08 18:21:15] WARNING in _internal:  * Debugger is active!
+[2025-06-08 18:21:15] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 18:21:21] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:21:21] "[35m[1mGET /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 18:21:21] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:21:21] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:21:21] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:21:21] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 18:21:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:21:22] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=1v73mUyh1wLBfhWp0kEW HTTP/1.1" 200 -
+[2025-06-08 18:21:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:21:29] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:21:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:21:29] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 18:22:36] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 18:22:36] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 18:22:36] INFO in _internal:  * Restarting with stat
+[2025-06-08 18:22:37] WARNING in _internal:  * Debugger is active!
+[2025-06-08 18:22:37] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 18:22:40] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:22:40] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 18:22:45] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:22:45] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 18:22:45] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:22:45] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:22:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:22:46] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 18:22:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:22:46] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=gFxF7m8GgAQPrM3yq8Nk HTTP/1.1" 200 -
+[2025-06-08 18:22:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:22:46] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 18:22:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:22:49] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:22:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:22:49] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 18:23:17] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 18:23:17] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 18:23:17] INFO in _internal:  * Restarting with stat
+[2025-06-08 18:23:18] WARNING in _internal:  * Debugger is active!
+[2025-06-08 18:23:18] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 18:23:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:23:22] "[35m[1mGET /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 18:23:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:23:22] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:23:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:23:22] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 18:23:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:23:22] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=mzN22L3nNvyuZdXbsn4U HTTP/1.1" 200 -
+[2025-06-08 18:23:47] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 18:23:47] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 18:23:47] INFO in _internal:  * Restarting with stat
+[2025-06-08 18:23:48] WARNING in _internal:  * Debugger is active!
+[2025-06-08 18:23:48] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 18:23:52] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:23:52] "[35m[1mGET /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 18:23:52] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:23:52] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:23:53] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:23:53] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 18:23:53] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:23:53] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=aaa8xq3486R4LN9kezlF HTTP/1.1" 200 -
+[2025-06-08 18:24:31] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 18:24:31] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 18:24:31] INFO in _internal:  * Restarting with stat
+[2025-06-08 18:24:32] WARNING in _internal:  * Debugger is active!
+[2025-06-08 18:24:32] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 18:24:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:24:33] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 18:24:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:24:39] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+[2025-06-08 18:24:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:24:39] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:24:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:24:39] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 18:24:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:24:39] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png&s=QBeO4nuama0enmpUuqSB HTTP/1.1" 200 -
+[2025-06-08 18:24:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:24:39] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 18:24:43] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:24:43] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 18:24:43] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:24:43] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 18:40:26] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 18:40:26] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 18:40:26] INFO in _internal:  * Restarting with stat
+[2025-06-08 18:40:27] WARNING in _internal:  * Debugger is active!
+[2025-06-08 18:40:27] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 18:40:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:40:32] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 18:40:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:40:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 18:40:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:40:38] "[32mPOST /auth/register HTTP/1.1[0m" 302 -
+[2025-06-08 18:40:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:40:38] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 18:40:47] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 18:40:47] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 19:38:14] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 19:38:14] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 19:38:14] INFO in _internal:  * Restarting with stat
+[2025-06-08 19:38:15] WARNING in _internal:  * Debugger is active!
+[2025-06-08 19:38:15] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 19:38:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:38:23] "GET / HTTP/1.1" 200 -
+[2025-06-08 19:38:27] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:38:27] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 19:38:30] ERROR in routes: 사용자명 중복 확인 오류: (sqlite3.OperationalError) no such column: users.password_hash
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.location AS users_location, users.preferred_radius AS users_preferred_radius, users.food_preferences AS users_food_preferences, users.budget_range AS users_budget_range, users.dietary_restrictions AS users_dietary_restrictions, users.is_active AS users_is_active, users.is_admin AS users_is_admin, users.created_at AS users_created_at, users.last_login AS users_last_login, users.current_session_id AS users_current_session_id, users.session_data AS users_session_data 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('이영민', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2025-06-08 19:38:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:38:30] "POST /auth/api/check-username HTTP/1.1" 200 -
+[2025-06-08 19:39:52] ERROR in routes: 사용자명 중복 확인 오류: (sqlite3.OperationalError) no such column: users.password_hash
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.location AS users_location, users.preferred_radius AS users_preferred_radius, users.food_preferences AS users_food_preferences, users.budget_range AS users_budget_range, users.dietary_restrictions AS users_dietary_restrictions, users.is_active AS users_is_active, users.is_admin AS users_is_admin, users.created_at AS users_created_at, users.last_login AS users_last_login, users.current_session_id AS users_current_session_id, users.session_data AS users_session_data 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('Youngmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2025-06-08 19:39:52] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:39:52] "POST /auth/api/check-username HTTP/1.1" 200 -
+[2025-06-08 19:40:26] ERROR in routes: 사용자명 중복 확인 오류: (sqlite3.OperationalError) no such column: users.password_hash
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.location AS users_location, users.preferred_radius AS users_preferred_radius, users.food_preferences AS users_food_preferences, users.budget_range AS users_budget_range, users.dietary_restrictions AS users_dietary_restrictions, users.is_active AS users_is_active, users.is_admin AS users_is_admin, users.created_at AS users_created_at, users.last_login AS users_last_login, users.current_session_id AS users_current_session_id, users.session_data AS users_session_data 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('Youngmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2025-06-08 19:40:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:40:26] "POST /auth/api/check-username HTTP/1.1" 200 -
+[2025-06-08 19:40:52] ERROR in routes: 사용자명 중복 확인 오류: (sqlite3.OperationalError) no such column: users.password_hash
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.location AS users_location, users.preferred_radius AS users_preferred_radius, users.food_preferences AS users_food_preferences, users.budget_range AS users_budget_range, users.dietary_restrictions AS users_dietary_restrictions, users.is_active AS users_is_active, users.is_admin AS users_is_admin, users.created_at AS users_created_at, users.last_login AS users_last_login, users.current_session_id AS users_current_session_id, users.session_data AS users_session_data 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('Youngmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2025-06-08 19:40:52] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:40:52] "POST /auth/api/check-username HTTP/1.1" 200 -
+[2025-06-08 19:41:30] ERROR in routes: 사용자명 중복 확인 오류: (sqlite3.OperationalError) no such column: users.password_hash
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.location AS users_location, users.preferred_radius AS users_preferred_radius, users.food_preferences AS users_food_preferences, users.budget_range AS users_budget_range, users.dietary_restrictions AS users_dietary_restrictions, users.is_active AS users_is_active, users.is_admin AS users_is_admin, users.created_at AS users_created_at, users.last_login AS users_last_login, users.current_session_id AS users_current_session_id, users.session_data AS users_session_data 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('Youngmin', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2025-06-08 19:41:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:41:30] "POST /auth/api/check-username HTTP/1.1" 200 -
+[2025-06-08 19:44:07] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 19:44:07] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 19:44:07] INFO in _internal:  * Restarting with stat
+[2025-06-08 19:44:08] WARNING in _internal:  * Debugger is active!
+[2025-06-08 19:44:08] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 19:44:12] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:44:12] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 19:44:15] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:44:15] "POST /auth/api/check-username HTTP/1.1" 200 -
+[2025-06-08 19:44:18] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:44:18] "POST /auth/api/check-username HTTP/1.1" 200 -
+[2025-06-08 19:44:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:44:24] "POST /auth/api/check-username HTTP/1.1" 200 -
+[2025-06-08 19:44:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:44:28] "POST /auth/api/check-email HTTP/1.1" 200 -
+[2025-06-08 19:44:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:44:33] "POST /auth/api/check-email HTTP/1.1" 200 -
+[2025-06-08 19:44:44] INFO in routes: 새 사용자 등록: 이영문 (ID: 4)
+[2025-06-08 19:44:44] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:44:44] "[32mPOST /auth/register HTTP/1.1[0m" 302 -
+[2025-06-08 19:44:44] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:44:44] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 19:45:00] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 19:45:00] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 19:45:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:45:00] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 19:45:21] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 19:45:21] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:45:21] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 19:45:30] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 19:45:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:45:30] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 19:47:00] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 19:47:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:47:00] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 19:50:14] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 19:50:17] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 19:50:17] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 19:50:17] INFO in _internal:  * Restarting with stat
+[2025-06-08 19:50:18] WARNING in _internal:  * Debugger is active!
+[2025-06-08 19:50:18] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 19:50:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:50:23] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 19:50:29] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 19:50:29] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 19:50:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:50:29] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 19:51:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:51:39] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 19:51:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:51:49] "POST /auth/api/check-username HTTP/1.1" 200 -
+[2025-06-08 19:51:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:51:54] "POST /auth/api/check-email HTTP/1.1" 200 -
+[2025-06-08 19:52:01] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:52:01] "POST /auth/api/check-email HTTP/1.1" 200 -
+[2025-06-08 19:52:15] INFO in routes: 새 사용자 등록: dudtkdwns123 (ID: 5)
+[2025-06-08 19:52:15] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:52:15] "[32mPOST /auth/register HTTP/1.1[0m" 302 -
+[2025-06-08 19:52:15] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:52:15] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 19:52:22] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 19:52:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:52:22] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 19:54:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:54:33] "GET /history HTTP/1.1" 200 -
+[2025-06-08 19:54:37] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 19:54:37] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 20:03:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:03:22] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 20:04:52] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:04:52] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:05:01] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 20:05:01] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:05:01] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:09:14] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 20:09:18] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 20:09:18] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 20:09:18] INFO in _internal:  * Restarting with stat
+[2025-06-08 20:09:19] WARNING in _internal:  * Debugger is active!
+[2025-06-08 20:09:19] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 20:09:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:09:22] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
+[2025-06-08 20:09:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:09:22] "GET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2025-06-08 20:09:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:09:23] "GET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2025-06-08 20:09:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:09:23] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png&s=Xk4StIxz8lwdZnhUQ5Nl HTTP/1.1" 200 -
+[2025-06-08 20:09:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:09:23] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2025-06-08 20:13:00] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 20:13:00] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 20:13:00] INFO in _internal:  * Restarting with stat
+[2025-06-08 20:13:01] WARNING in _internal:  * Debugger is active!
+[2025-06-08 20:13:01] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 20:13:03] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:13:03] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
+[2025-06-08 20:13:03] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:13:03] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 20:13:04] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:13:04] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 20:13:04] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:13:04] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png&s=ki1D6c1SxLUVk62y2ko7 HTTP/1.1" 200 -
+[2025-06-08 20:13:15] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:13:15] "GET / HTTP/1.1" 200 -
+[2025-06-08 20:13:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:13:17] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
+[2025-06-08 20:13:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:13:17] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 20:13:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:13:17] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 20:13:18] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:13:18] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=console.png&s=ki1D6c1SxLUVk62y2ko7 HTTP/1.1[0m" 304 -
+[2025-06-08 20:16:34] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 20:16:34] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 20:16:34] INFO in _internal:  * Restarting with stat
+[2025-06-08 20:16:35] WARNING in _internal:  * Debugger is active!
+[2025-06-08 20:16:35] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 20:16:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:16:41] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:16:49] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 20:16:49] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 20:16:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:16:49] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:19:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:19:22] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 20:25:05] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 20:25:08] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 20:25:08] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 20:25:08] INFO in _internal:  * Restarting with stat
+[2025-06-08 20:25:09] WARNING in _internal:  * Debugger is active!
+[2025-06-08 20:25:09] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 20:25:12] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:12] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:25:18] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 20:25:18] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 20:25:18] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:18] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:25:41] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 20:25:44] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 20:25:44] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 20:25:44] INFO in _internal:  * Restarting with stat
+[2025-06-08 20:25:44] WARNING in _internal:  * Debugger is active!
+[2025-06-08 20:25:44] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 20:25:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:48] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
+[2025-06-08 20:25:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:48] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 20:25:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:49] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 20:25:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:49] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png&s=Om53jHV5PAGyG8IokZNE HTTP/1.1" 200 -
+[2025-06-08 20:25:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:49] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-06-08 20:25:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:55] "GET / HTTP/1.1" 200 -
+[2025-06-08 20:25:58] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:58] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
+[2025-06-08 20:25:58] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:58] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 20:25:58] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:58] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 20:25:58] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:25:58] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=console.png&s=Om53jHV5PAGyG8IokZNE HTTP/1.1[0m" 304 -
+[2025-06-08 20:30:09] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 20:30:09] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 20:30:09] INFO in _internal:  * Restarting with stat
+[2025-06-08 20:30:10] WARNING in _internal:  * Debugger is active!
+[2025-06-08 20:30:10] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 20:30:11] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:30:11] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:30:21] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 20:30:21] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 20:30:21] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:30:21] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:33:37] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 20:34:49] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 20:34:49] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 20:34:49] INFO in _internal:  * Restarting with stat
+[2025-06-08 20:34:50] WARNING in _internal:  * Debugger is active!
+[2025-06-08 20:34:50] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 20:34:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:34:54] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:35:00] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 20:35:00] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 20:35:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:35:00] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:36:45] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 20:36:45] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:36:45] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:36:53] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 20:36:55] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 20:36:55] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 20:36:55] INFO in _internal:  * Restarting with stat
+[2025-06-08 20:36:56] WARNING in _internal:  * Debugger is active!
+[2025-06-08 20:36:56] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 20:37:08] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:37:08] "GET / HTTP/1.1" 200 -
+[2025-06-08 20:37:09] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:37:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 20:37:11] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:37:11] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 20:37:13] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:37:13] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:37:17] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 20:37:17] ERROR in routes: 로그인 오류: name 'uuid' is not defined
+[2025-06-08 20:37:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:37:17] "POST /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:42:04] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 20:42:07] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 20:42:07] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 20:42:07] INFO in _internal:  * Restarting with stat
+[2025-06-08 20:42:07] WARNING in _internal:  * Debugger is active!
+[2025-06-08 20:42:07] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 20:42:15] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:42:15] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:42:20] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 20:42:20] INFO in session_manager: 새 세션 생성: foodi_session_5_1749350540_733ab178
+[2025-06-08 20:42:20] INFO in routes: 사용자 로그인: dudtkdwns123 (세션: foodi_session_5_1749350540_733ab178)
+[2025-06-08 20:42:20] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:42:20] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+[2025-06-08 20:42:20] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:42:20] "GET / HTTP/1.1" 200 -
+[2025-06-08 20:43:04] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:43:04] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 20:43:12] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 20:43:12] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:43:12] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 20:43:40] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:43:40] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 20:44:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:44:24] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 20:44:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:44:30] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 20:49:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:49:00] "GET / HTTP/1.1" 200 -
+[2025-06-08 20:49:05] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:49:05] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 20:54:36] INFO in routes: SessionManager 종료: 활성 세션 1개
+[2025-06-08 20:55:09] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 20:55:09] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 20:55:09] INFO in _internal:  * Restarting with stat
+[2025-06-08 20:55:10] WARNING in _internal:  * Debugger is active!
+[2025-06-08 20:55:10] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 20:55:19] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 20:55:19] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:55:19] "GET / HTTP/1.1" 200 -
+[2025-06-08 20:55:31] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:55:31] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 20:55:37] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:55:37] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 20:56:13] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 20:56:13] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:56:13] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 20:56:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 20:56:23] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 20:58:08] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 21:02:04] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 21:02:04] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 21:02:04] INFO in _internal:  * Restarting with stat
+[2025-06-08 21:02:05] WARNING in _internal:  * Debugger is active!
+[2025-06-08 21:02:05] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 21:02:08] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 21:02:08] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:02:08] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 21:02:19] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 21:02:19] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:02:19] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 21:02:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:02:29] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 21:03:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:03:26] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:07:13] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 21:07:15] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 21:07:15] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 21:07:15] INFO in _internal:  * Restarting with stat
+[2025-06-08 21:07:16] WARNING in _internal:  * Debugger is active!
+[2025-06-08 21:07:16] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 21:07:20] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 21:07:20] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:07:20] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 21:07:20] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:07:20] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:07:28] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 21:07:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:07:28] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 21:07:37] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:07:37] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 21:09:15] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:09:15] "POST /api/history/plan HTTP/1.1" 200 -
+[2025-06-08 21:19:52] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 21:19:55] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 21:19:55] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 21:19:55] INFO in _internal:  * Restarting with stat
+[2025-06-08 21:19:56] WARNING in _internal:  * Debugger is active!
+[2025-06-08 21:19:56] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 21:20:01] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 21:20:01] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:20:01] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 21:20:01] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:20:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:20:12] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 21:20:12] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:20:12] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 21:20:22] ERROR in routes: 방문 예정 등록 API 오류: name 'sm' is not defined
+[2025-06-08 21:20:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:20:22] "[35m[1mPOST /api/history/plan HTTP/1.1[0m" 500 -
+[2025-06-08 21:20:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:20:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:35:33] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 21:35:38] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 21:35:38] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 21:35:38] INFO in _internal:  * Restarting with stat
+[2025-06-08 21:35:41] WARNING in _internal:  * Debugger is active!
+[2025-06-08 21:35:41] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 21:35:46] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 21:35:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:35:46] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 21:35:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:35:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:35:54] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 21:35:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:35:54] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 21:36:06] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:36:06] "[35m[1mPOST /api/history/plan HTTP/1.1[0m" 500 -
+[2025-06-08 21:38:57] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 21:41:27] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 21:41:27] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 21:41:27] INFO in _internal:  * Restarting with stat
+[2025-06-08 21:41:30] WARNING in _internal:  * Debugger is active!
+[2025-06-08 21:41:30] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 21:41:34] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 21:41:34] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:41:34] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 21:41:34] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:41:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:41:45] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 21:41:45] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:41:45] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 21:41:54] INFO in routes: ✓ SessionManager 사용 가능
+[2025-06-08 21:41:54] INFO in routes: ✓ 데이터베이스 모델 사용 가능
+[2025-06-08 21:41:54] INFO in routes: ✓ datetime 모듈 사용 가능
+[2025-06-08 21:41:54] INFO in routes: === API 호출 시작 ===
+[2025-06-08 21:41:54] INFO in routes: 요청 데이터: {'restaurant_id': None, 'restaurant_name': '가족뜰', 'status': 'planned', 'user_query': '가족뜰 방문 예정으로 등록', 'action_type': 'mark_as_planned'}
+[2025-06-08 21:41:54] INFO in routes: 파라미터: id=None, name=가족뜰, status=planned
+[2025-06-08 21:41:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:41:54] "[31m[1mPOST /api/history/plan HTTP/1.1[0m" 400 -
+[2025-06-08 21:42:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:42:17] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 21:42:18] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:42:18] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:42:28] INFO in session_manager: 새 세션 생성: foodi_session_5_1749354148_62cdfe86
+[2025-06-08 21:42:28] INFO in routes: 사용자 로그인: dudtkdwns123 (세션: foodi_session_5_1749354148_62cdfe86)
+[2025-06-08 21:42:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:42:28] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+[2025-06-08 21:42:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:42:28] "GET / HTTP/1.1" 200 -
+[2025-06-08 21:42:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:42:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:42:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:42:30] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 21:42:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:42:30] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:42:43] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 21:42:43] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:42:43] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 21:42:53] INFO in routes: ✓ SessionManager 사용 가능
+[2025-06-08 21:42:53] INFO in routes: ✓ 데이터베이스 모델 사용 가능
+[2025-06-08 21:42:53] INFO in routes: ✓ datetime 모듈 사용 가능
+[2025-06-08 21:42:53] INFO in routes: === API 호출 시작 ===
+[2025-06-08 21:42:53] INFO in routes: 요청 데이터: {'restaurant_id': None, 'restaurant_name': '가족뜰', 'status': 'planned', 'user_query': '가족뜰 방문 예정으로 등록', 'action_type': 'mark_as_planned'}
+[2025-06-08 21:42:53] INFO in routes: 파라미터: id=None, name=가족뜰, status=planned
+[2025-06-08 21:42:53] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:42:53] "[31m[1mPOST /api/history/plan HTTP/1.1[0m" 400 -
+[2025-06-08 21:48:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:48:28] "GET /history HTTP/1.1" 200 -
+[2025-06-08 21:48:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:48:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:48:36] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:48:36] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 21:48:36] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:48:36] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:49:47] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:49:47] "GET /history HTTP/1.1" 200 -
+[2025-06-08 21:49:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:49:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:50:02] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:50:02] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 21:50:03] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:50:03] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:51:01] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:51:01] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 21:51:01] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:51:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 21:57:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:57:24] "GET /history HTTP/1.1" 200 -
+[2025-06-08 21:57:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:57:26] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 21:57:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:57:28] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 21:57:28] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:57:28] "GET / HTTP/1.1" 200 -
+[2025-06-08 21:57:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:57:30] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 21:57:50] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:57:50] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 21:58:00] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 21:58:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 21:58:00] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 22:02:04] INFO in routes: SessionManager 종료: 활성 세션 1개
+[2025-06-08 22:02:10] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 22:02:10] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 22:02:10] INFO in _internal:  * Restarting with stat
+[2025-06-08 22:02:13] WARNING in _internal:  * Debugger is active!
+[2025-06-08 22:02:13] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 22:02:18] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 22:02:18] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:02:18] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 22:02:29] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 22:02:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:02:29] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 22:02:38] INFO in routes: ✓ SessionManager 사용 가능
+[2025-06-08 22:02:38] INFO in routes: ✓ 데이터베이스 모델 사용 가능
+[2025-06-08 22:02:38] INFO in routes: ✓ datetime 모듈 사용 가능
+[2025-06-08 22:02:38] INFO in routes: === API 호출 시작 ===
+[2025-06-08 22:02:38] INFO in routes: 요청 데이터: {'restaurant_id': None, 'restaurant_name': '가족뜰', 'status': 'planned', 'user_query': '가족뜰 방문 예정으로 등록', 'action_type': 'mark_as_planned'}
+[2025-06-08 22:02:38] INFO in routes: 파라미터: id=None, name=가족뜰, status=planned
+[2025-06-08 22:02:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:02:38] "[31m[1mPOST /api/history/plan HTTP/1.1[0m" 400 -
+[2025-06-08 22:07:06] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 22:07:11] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 22:07:11] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 22:07:11] INFO in _internal:  * Restarting with stat
+[2025-06-08 22:07:14] WARNING in _internal:  * Debugger is active!
+[2025-06-08 22:07:14] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 22:07:19] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 22:07:19] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:07:19] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 22:07:34] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 22:07:34] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:07:34] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 22:07:42] INFO in routes: ✓ SessionManager 사용 가능
+[2025-06-08 22:07:42] INFO in routes: ✓ 데이터베이스 모델 사용 가능
+[2025-06-08 22:07:42] INFO in routes: ✓ datetime 모듈 사용 가능
+[2025-06-08 22:07:42] INFO in routes: === API 호출 시작 ===
+[2025-06-08 22:07:42] INFO in routes: 요청 데이터: {'restaurant_id': None, 'restaurant_name': '가족뜰', 'status': 'planned', 'user_query': '가족뜰 방문 예정으로 등록', 'action_type': 'mark_as_planned'}
+[2025-06-08 22:07:42] INFO in routes: 파라미터: id=None, name=가족뜰, status=planned
+[2025-06-08 22:07:42] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:07:42] "[31m[1mPOST /api/history/plan HTTP/1.1[0m" 400 -
+[2025-06-08 22:07:48] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:07:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:09:06] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 22:09:11] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 22:09:11] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 22:09:11] INFO in _internal:  * Restarting with stat
+[2025-06-08 22:09:14] WARNING in _internal:  * Debugger is active!
+[2025-06-08 22:09:14] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 22:09:20] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 22:09:20] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:09:20] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 22:09:20] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:09:20] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:09:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:09:23] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 22:09:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:09:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:09:37] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 22:09:37] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:09:37] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 22:10:22] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 22:10:26] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 22:10:26] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 22:10:26] INFO in _internal:  * Restarting with stat
+[2025-06-08 22:10:29] WARNING in _internal:  * Debugger is active!
+[2025-06-08 22:10:29] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 22:10:35] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 22:10:35] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:10:35] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 22:10:36] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:10:36] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:10:45] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 22:10:45] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:10:45] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 22:10:57] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:10:57] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 22:10:57] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:10:57] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:18:41] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 22:18:44] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 22:18:44] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 22:18:44] INFO in _internal:  * Restarting with stat
+[2025-06-08 22:18:45] WARNING in _internal:  * Debugger is active!
+[2025-06-08 22:18:45] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 22:18:50] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 22:18:50] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:18:50] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 22:18:50] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:18:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:18:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:18:54] "GET /reviews HTTP/1.1" 200 -
+[2025-06-08 22:18:54] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:18:54] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:18:55] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:18:55] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 22:18:56] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:18:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:19:04] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 22:19:04] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:19:04] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 22:19:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:19:17] "GET /reviews?restaurant_id=unknown HTTP/1.1" 200 -
+[2025-06-08 22:19:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:19:17] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:25:54] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 22:25:56] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 22:25:56] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 22:25:56] INFO in _internal:  * Restarting with stat
+[2025-06-08 22:25:57] WARNING in _internal:  * Debugger is active!
+[2025-06-08 22:25:57] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 22:26:03] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 22:26:03] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:26:03] "GET /reviews?restaurant_id=unknown HTTP/1.1" 200 -
+[2025-06-08 22:26:03] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:26:03] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:26:05] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:26:05] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 22:26:05] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:26:05] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:26:14] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 22:26:14] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:26:14] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 22:26:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:26:24] "GET /reviews?restaurant_id=unknown&restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-08 22:26:24] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:26:24] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:30:20] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 22:30:22] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 22:30:22] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 22:30:22] INFO in _internal:  * Restarting with stat
+[2025-06-08 22:30:23] WARNING in _internal:  * Debugger is active!
+[2025-06-08 22:30:23] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 22:30:26] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 22:30:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:30:26] "GET /reviews?restaurant_id=unknown&restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-08 22:31:36] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 22:41:26] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 22:41:26] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 22:41:26] INFO in _internal:  * Restarting with stat
+[2025-06-08 22:41:27] WARNING in _internal:  * Debugger is active!
+[2025-06-08 22:41:27] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 22:41:32] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 22:41:32] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:41:32] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 22:41:34] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:41:34] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 22:41:43] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 22:41:43] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:41:43] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 22:41:53] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:41:53] "GET /reviews?restaurant_id=unknown&restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-08 22:41:59] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:41:59] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-08 22:42:06] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:42:06] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:42:14] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 22:43:58] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 22:43:58] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 22:43:58] INFO in _internal:  * Restarting with stat
+[2025-06-08 22:43:59] WARNING in _internal:  * Debugger is active!
+[2025-06-08 22:43:59] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 22:44:02] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:44:02] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-08 22:44:12] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:44:12] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-08 22:44:15] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 22:44:15] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:44:15] "GET /reviews?restaurant_id=unknown&restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-08 22:44:20] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:44:20] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-08 22:44:22] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:44:22] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 22:44:35] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 22:44:35] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-08 23:01:12] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 23:01:15] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 23:01:15] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 23:01:15] INFO in _internal:  * Restarting with stat
+[2025-06-08 23:01:15] WARNING in _internal:  * Debugger is active!
+[2025-06-08 23:01:15] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 23:01:26] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 23:01:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:01:26] "GET /reviews?restaurant_id=unknown&restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-08 23:01:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:01:30] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-08 23:01:30] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:01:30] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-08 23:01:46] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 23:02:54] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 23:02:54] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 23:02:54] INFO in _internal:  * Restarting with stat
+[2025-06-08 23:02:54] WARNING in _internal:  * Debugger is active!
+[2025-06-08 23:02:54] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 23:02:57] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 23:02:57] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:02:57] "GET /reviews?restaurant_id=unknown&restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-08 23:03:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:03:00] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-08 23:03:00] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:03:00] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-08 23:03:18] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:03:18] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 23:03:25] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:03:25] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-08 23:03:25] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:03:25] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-08 23:04:34] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:04:34] "GET / HTTP/1.1" 200 -
+[2025-06-08 23:04:34] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:04:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 23:04:36] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:04:36] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 23:04:37] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:04:37] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 23:04:46] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 23:04:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:04:46] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 23:04:56] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:04:56] "GET /reviews?restaurant_id=unknown&restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-08 23:04:56] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:04:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 23:07:38] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 23:07:40] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 23:07:40] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 23:07:40] INFO in _internal:  * Restarting with stat
+[2025-06-08 23:07:41] WARNING in _internal:  * Debugger is active!
+[2025-06-08 23:07:41] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 23:07:46] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 23:07:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:07:46] "GET /reviews?restaurant_id=unknown&restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-08 23:07:46] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:07:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 23:07:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:07:49] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 23:07:49] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:07:49] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 23:08:11] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:08:11] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-08 23:08:41] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 23:08:44] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-08 23:08:44] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 23:08:44] INFO in _internal:  * Restarting with stat
+[2025-06-08 23:08:44] WARNING in _internal:  * Debugger is active!
+[2025-06-08 23:08:44] INFO in _internal:  * Debugger PIN: 116-554-671
+[2025-06-08 23:08:50] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 23:08:50] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:08:50] "GET /chat HTTP/1.1" 200 -
+[2025-06-08 23:08:58] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-08 23:08:58] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:08:58] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-08 23:09:09] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:09:09] "GET /reviews?restaurant_id=unknown HTTP/1.1" 200 -
+[2025-06-08 23:09:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:09:29] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-08 23:09:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:09:29] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-08 23:35:44] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 23:35:44] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 23:35:44] INFO in _internal:  * Restarting with stat
+[2025-06-08 23:35:45] WARNING in _internal:  * Debugger is active!
+[2025-06-08 23:35:45] INFO in _internal:  * Debugger PIN: 122-879-908
+[2025-06-08 23:36:38] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 23:36:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:36:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-06-08 23:36:38] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:36:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-06-08 23:36:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:36:39] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2025-06-08 23:36:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:36:39] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2025-06-08 23:36:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:36:39] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=mQtmB6COlo9iE9obv5hL HTTP/1.1" 200 -
+[2025-06-08 23:36:39] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:36:39] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2025-06-08 23:37:28] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 23:37:30] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 23:37:30] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 23:37:30] INFO in _internal:  * Restarting with stat
+[2025-06-08 23:37:31] WARNING in _internal:  * Debugger is active!
+[2025-06-08 23:37:31] INFO in _internal:  * Debugger PIN: 122-879-908
+[2025-06-08 23:37:42] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 23:37:42] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:37:42] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-06-08 23:37:42] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:37:42] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-06-08 23:37:43] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:37:43] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 23:37:43] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:37:43] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 23:37:43] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:37:43] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=HDVhKRdmJyhS6Goe7BL3 HTTP/1.1" 200 -
+[2025-06-08 23:38:28] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 23:38:31] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 23:38:31] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 23:38:31] INFO in _internal:  * Restarting with stat
+[2025-06-08 23:38:31] WARNING in _internal:  * Debugger is active!
+[2025-06-08 23:38:31] INFO in _internal:  * Debugger PIN: 122-879-908
+[2025-06-08 23:38:33] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 23:38:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:38:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-06-08 23:38:33] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:38:33] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 23:38:34] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:38:34] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 23:38:34] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:38:34] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=RRweiWh4Tk5ioGUs3sKl HTTP/1.1" 200 -
+[2025-06-08 23:38:35] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:38:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-06-08 23:38:35] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:38:35] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-06-08 23:38:35] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:38:35] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-06-08 23:38:36] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:38:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=RRweiWh4Tk5ioGUs3sKl HTTP/1.1[0m" 304 -
+[2025-06-08 23:39:51] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 23:39:53] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 23:39:53] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 23:39:53] INFO in _internal:  * Restarting with stat
+[2025-06-08 23:39:54] WARNING in _internal:  * Debugger is active!
+[2025-06-08 23:39:54] INFO in _internal:  * Debugger PIN: 122-879-908
+[2025-06-08 23:39:57] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 23:39:57] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:39:57] "[32mGET / HTTP/1.1[0m" 302 -
+[2025-06-08 23:39:57] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:39:57] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 23:39:57] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:39:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 23:40:03] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:40:03] "[32mGET / HTTP/1.1[0m" 302 -
+[2025-06-08 23:40:03] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:40:03] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 23:40:10] INFO in session_manager: 새 세션 생성: foodi_session_5_1749361210_879b4fc2
+[2025-06-08 23:40:10] INFO in routes: 사용자 로그인: dudtkdwns123 (세션: foodi_session_5_1749361210_879b4fc2)
+[2025-06-08 23:40:10] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:40:10] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+[2025-06-08 23:40:10] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:40:10] "GET / HTTP/1.1" 200 -
+[2025-06-08 23:40:23] INFO in routes: SessionManager 종료: 활성 세션 1개
+[2025-06-08 23:41:01] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 23:41:01] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 23:41:01] INFO in _internal:  * Restarting with stat
+[2025-06-08 23:41:02] WARNING in _internal:  * Debugger is active!
+[2025-06-08 23:41:02] INFO in _internal:  * Debugger PIN: 122-879-908
+[2025-06-08 23:41:11] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 23:41:11] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:41:11] "[32mGET / HTTP/1.1[0m" 302 -
+[2025-06-08 23:41:11] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:41:11] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 23:41:11] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:41:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 23:41:17] INFO in session_manager: 새 세션 생성: foodi_session_5_1749361277_ff46853e
+[2025-06-08 23:41:17] INFO in routes: 사용자 로그인: dudtkdwns123 (세션: foodi_session_5_1749361277_ff46853e)
+[2025-06-08 23:41:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:41:17] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+[2025-06-08 23:41:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:41:17] "GET / HTTP/1.1" 200 -
+[2025-06-08 23:44:36] INFO in routes: SessionManager 종료: 활성 세션 1개
+[2025-06-08 23:44:38] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 23:44:38] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 23:44:38] INFO in _internal:  * Restarting with stat
+[2025-06-08 23:44:38] WARNING in _internal:  * Debugger is active!
+[2025-06-08 23:44:38] INFO in _internal:  * Debugger PIN: 122-879-908
+[2025-06-08 23:44:41] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 23:44:41] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:44:41] "GET / HTTP/1.1" 200 -
+[2025-06-08 23:47:00] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-08 23:47:03] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-08 23:47:03] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-08 23:47:03] INFO in _internal:  * Restarting with stat
+[2025-06-08 23:47:04] WARNING in _internal:  * Debugger is active!
+[2025-06-08 23:47:04] INFO in _internal:  * Debugger PIN: 122-879-908
+[2025-06-08 23:47:07] INFO in routes: SessionManager 초기화 완료
+[2025-06-08 23:47:07] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:47:07] "GET / HTTP/1.1" 200 -
+[2025-06-08 23:47:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:47:17] "[32mGET / HTTP/1.1[0m" 302 -
+[2025-06-08 23:47:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:47:17] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 23:47:17] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:47:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-08 23:47:23] INFO in session_manager: 새 세션 생성: foodi_session_5_1749361643_80ae90e1
+[2025-06-08 23:47:23] INFO in routes: 사용자 로그인: dudtkdwns123 (세션: foodi_session_5_1749361643_80ae90e1)
+[2025-06-08 23:47:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:47:23] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+[2025-06-08 23:47:23] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:47:23] "GET / HTTP/1.1" 200 -
+[2025-06-08 23:47:25] INFO in routes: SessionManager에서 세션 삭제: foodi_session_5_1749361643_80ae90e1
+[2025-06-08 23:47:25] INFO in routes: 사용자 세션 정보 클리어: dudtkdwns123
+[2025-06-08 23:47:25] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:47:25] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+[2025-06-08 23:47:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:47:26] "[32mGET / HTTP/1.1[0m" 302 -
+[2025-06-08 23:47:26] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:47:26] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-08 23:47:29] INFO in _internal: 127.0.0.1 - - [08/Jun/2025 23:47:29] "GET /auth/register HTTP/1.1" 200 -
+[2025-06-08 23:47:35] INFO in routes: SessionManager 종료: 활성 세션 0개

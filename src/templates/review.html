@@ -1,0 +1,657 @@
+{% extends "base.html" %}
+
+{% block title %}리뷰 - FOODI{% endblock %}
+
+{% block extra_css %}
+<style>
+    .page-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 80px 0 60px;
+    }
+
+    .review-stats {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #667eea;
+        margin-bottom: 10px;
+    }
+
+    .stat-label {
+        color: #6c757d;
+        font-weight: 500;
+    }
+
+    .rating-stars {
+        color: #ffc107;
+        font-size: 1.5rem;
+        margin: 0 5px;
+    }
+
+    .review-form {
+        background: white;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        margin-bottom: 40px;
+    }
+
+    .review-item {
+        background: white;
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+
+    .review-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .review-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+
+    .reviewer-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .reviewer-avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        margin-right: 15px;
+    }
+
+    .restaurant-tag {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .restaurant-tag:hover {
+        transform: scale(1.05);
+        color: white;
+    }
+
+    .star-rating {
+        display: flex;
+        gap: 3px;
+        margin-bottom: 10px;
+    }
+
+    .star {
+        cursor: pointer;
+        color: #ddd;
+        font-size: 1.8rem;
+        transition: color 0.2s ease;
+    }
+
+    .star.active,
+    .star:hover {
+        color: #ffc107;
+    }
+
+    .form-control:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    }
+
+    .btn-submit {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        border: none;
+        border-radius: 25px;
+        padding: 12px 30px;
+        color: white;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .btn-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    .review-content {
+        line-height: 1.7;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .review-date {
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+    .helpful-section {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    .helpful-btn {
+        background: none;
+        border: 1px solid #dee2e6;
+        border-radius: 20px;
+        padding: 5px 15px;
+        color: #6c757d;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+    }
+
+    .helpful-btn:hover {
+        background: #667eea;
+        color: white;
+        border-color: #667eea;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 60px 20px;
+        color: #6c757d;
+    }
+
+    .empty-state i {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        color: #dee2e6;
+    }
+
+    @media (max-width: 768px) {
+        .review-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .stat-item {
+            padding: 15px 10px;
+        }
+        
+        .review-form {
+            padding: 25px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-5 fw-bold mb-4">
+                    <i class="fas fa-star me-3"></i>리뷰 시스템
+                </h1>
+                <p class="lead mb-0">
+                    맛집 경험을 공유하고 다른 사용자들에게 도움을 주세요
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Review Form -->
+    <div class="review-form">
+        <h3 class="mb-4">
+            <i class="fas fa-edit me-2 text-primary"></i>리뷰 작성하기
+        </h3>
+        
+        <form id="reviewForm">
+            <div class="row">
+                <input type="hidden" id="restaurantId" name="restaurant_id" value="{{ restaurant_name }}">
+                <input type="hidden1" id="restaurant_address" name="restaurant_address" value="{{ restaurant_address }}">
+                <div class="col-md-6 mb-3">
+                    <label for="restaurantName" class="form-label">식당명</label>
+                    <input type="text" class="form-control" id="restaurantName" value="{{ restaurant_name }}"
+                           placeholder="식당 이름을 입력하세요" required>
+            
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="visitDate" class="form-label">방문일</label>
+                    <input type="date" class="form-control" id="visitDate" 
+                           value="{{ today if today else '' }}" required>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">평점</label>
+                <div class="star-rating" id="starRating">
+                    <span class="star" data-rating="1"><i class="fas fa-star"></i></span>
+                    <span class="star" data-rating="2"><i class="fas fa-star"></i></span>
+                    <span class="star" data-rating="3"><i class="fas fa-star"></i></span>
+                    <span class="star" data-rating="4"><i class="fas fa-star"></i></span>
+                    <span class="star" data-rating="5"><i class="fas fa-star"></i></span>
+                </div>
+                <input type="hidden" id="rating" name="rating" value="0">
+            </div>
+            
+            <div class="mb-4">
+                <label for="reviewContent" class="form-label">리뷰 내용</label>
+                <textarea class="form-control" id="reviewContent" rows="5" 
+                          placeholder="음식의 맛, 서비스, 분위기 등에 대한 솔직한 후기를 작성해주세요..." required></textarea>
+                <div class="form-text">최소 10자 이상 작성해주세요.</div>
+            </div>
+            
+            <div class="text-center">
+                <button type="submit" class="btn btn-submit btn-lg">
+                    <i class="fas fa-paper-plane me-2"></i>리뷰 등록하기
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Recent Reviews -->
+    <div class="row">
+        <div class="col-12">
+            <h3 class="mb-4">
+                <i class="fas fa-comments me-2 text-primary"></i>최근 리뷰
+            </h3>
+        </div>
+    </div>
+
+    
+
+    <!-- Sample Reviews (실제로는 백엔드에서 데이터 가져오기) -->
+    <div id="reviewsList">
+        {% for review in reviews %}
+        <div class="review-item">
+            <div class="review-header">
+                <div class="reviewer-info">
+                    <div class="reviewer-avatar">{{ review.user.username[0] if review.user and review.user.username else "?" }}</div>
+                    <div>
+                        <div class="fw-bold">{{ review.user.username if review.user and review.user.username else "익명" }}</div>
+                        <div class="rating-stars">
+                            {% for i in range(1, 6) %}
+                                {% if i <= review.rating %}
+                                    <i class="fas fa-star"></i>
+                                {% else %}
+                                    <i class="far fa-star"></i>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="restaurant-tag">{{ review.restaurant_id or '식당 이름 없음' }}</a>
+            </div>
+            <div class="review-content">
+                {{ review.content }}
+            </div>
+            <div class="review-date">
+                {{ review.visit_date.strftime('%Y년 %-m월 %-d일') if review.visit_date else "날짜 미상" }}
+            </div>
+            <div class="helpful-section">
+                <button class="helpful-btn" data-helpful="true">
+                    <i class="fas fa-thumbs-up me-1"></i>도움됨 <span class="count">{{ review.helpful_count or 0 }}</span>
+                </button>
+            </div>
+        </div>
+        {% else %}
+        <div class="text-center py-3 text-muted">아직 작성된 리뷰가 없습니다.</div>
+        {% endfor %}
+        <!-- Load more button -->
+        {% if reviews|length >= 5 %}
+        <div class="text-center py-4">
+            <button class="btn btn-outline-primary" id="loadMoreBtn">
+                <i class="fas fa-plus me-2"></i>더 많은 리뷰 보기
+            </button>
+        </div>
+        {% endif %}
+    </div>
+    
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function submitReviewForm() {
+    const restaurantId = document.getElementById('restaurantId').value;
+    const restaurantName = document.getElementById('restaurantName').value;
+    const restaurant_address = document.getElementById('restaurant_address').value;
+    const visitDate = document.getElementById('visitDate').value;
+    const rating = document.getElementById('rating').value;
+    const content = document.getElementById('reviewContent').value;
+
+    // 유효성 검사
+    if (!rating || parseInt(rating) < 1 || parseInt(rating) > 5) {
+        alert("별점을 선택해주세요.");
+        return;
+    }
+
+    if (!content || content.trim().length < 10) {
+        alert("리뷰는 최소 10자 이상 작성해주세요.");
+        return;
+    }
+
+    const payload = {
+        restaurant_id: restaurantId,
+        restaurant_name: restaurantName,
+        restaurant_address: restaurant_address,
+        visit_date: visitDate,
+        rating: rating,
+        content: content.trim()
+    };
+
+    fetch('/reviews/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+    })
+    .then(response => response.json())
+    .then(result => {
+        if (result.success) {
+            alert(result.message);
+            window.location.reload();  // 또는 다른 페이지로 이동
+        } else {
+            alert("저장 실패: " + result.error);
+        }
+    })
+    .catch(error => {
+        console.error('리뷰 전송 오류:', error);
+        alert("서버 오류가 발생했습니다.");
+    });
+}
+
+document.getElementById('reviewForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // 기본 제출 막기
+    submitReviewForm(); // 위에서 정의한 함수 호출
+});
+
+
+document.querySelectorAll('.star-rating .star').forEach(star => {
+    star.addEventListener('click', function () {
+        const selectedRating = this.getAttribute('data-rating');
+        document.getElementById('rating').value = selectedRating;
+
+        // 시각적 표시 업데이트
+        document.querySelectorAll('.star-rating .star').forEach(s => {
+            s.classList.remove('selected');
+        });
+        for (let i = 0; i < selectedRating; i++) {
+            document.querySelectorAll('.star-rating .star')[i].classList.add('selected');
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const restaurantNameParam = urlParams.get('restaurant_name');
+    if (restaurantNameParam) {
+        document.getElementById('restaurantName').value = decodeURIComponent(restaurantNameParam);
+    }
+
+    // 별점 선택 기능
+    const stars = document.querySelectorAll('.star');
+    const ratingInput = document.getElementById('rating');
+    
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            const rating = parseInt(this.dataset.rating);
+            ratingInput.value = rating;
+            
+            stars.forEach((s, index) => {
+                if (index < rating) {
+                    s.classList.add('active');
+                } else {
+                    s.classList.remove('active');
+                }
+            });
+        });
+        
+        star.addEventListener('mouseover', function() {
+            const rating = parseInt(this.dataset.rating);
+            
+            stars.forEach((s, index) => {
+                if (index < rating) {
+                    s.style.color = '#ffc107';
+                } else {
+                    s.style.color = '#ddd';
+                }
+            });
+        });
+    });
+    
+    // 별점 영역을 벗어날 때 원래 상태로 복원
+    document.getElementById('starRating').addEventListener('mouseleave', function() {
+        const currentRating = parseInt(ratingInput.value);
+        
+        stars.forEach((s, index) => {
+            if (index < currentRating) {
+                s.style.color = '#ffc107';
+            } else {
+                s.style.color = '#ddd';
+            }
+        });
+    });
+    
+    // 리뷰 폼 제출
+    document.getElementById('reviewForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const restaurantName = document.getElementById('restaurantName').value;
+    const visitDate = document.getElementById('visitDate').value;
+    const rating = document.getElementById('rating').value;
+    const content = document.getElementById('reviewContent').value;
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const restaurantId = document.getElementById('restaurantId').value;
+
+    // 유효성 검사
+    if (!restaurantName || !visitDate || !rating || !content) {
+        showAlert('모든 필드를 입력해주세요.', 'warning');
+        return;
+    }
+
+    fetch('/api/reviews', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            restaurant_id: restaurantId,
+            restaurant_name: restaurantName,
+            visit_date: visitDate,
+            rating: rating,
+            content: content
+        })
+    })
+
+    if (parseInt(rating) === 0) {
+        showAlert('별점을 선택해주세요.', 'warning');
+        return;
+    }
+
+    if (content.length < 10) {
+        showAlert('리뷰 내용을 최소 10자 이상 작성해주세요.', 'warning');
+        return;
+    }
+
+    // 서버로 전송
+    showLoading(submitBtn);
+
+    fetch('/reviews/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            restaurant_name: restaurantName,
+            visit_date: visitDate,
+            rating: rating,
+            content: content
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        hideLoading(submitBtn, '<i class="fas fa-paper-plane me-2"></i>리뷰 등록하기');
+
+        if (data.success) {
+            showAlert('리뷰가 성공적으로 등록되었습니다!', 'success');
+            this.reset();
+            document.getElementById('rating').value = '0';
+            document.querySelectorAll('.star').forEach(s => s.classList.remove('active'));
+
+            addNewReview(restaurantName, rating, content, visitDate);
+        } else {
+            showAlert('저장 실패: ' + (data.error || '서버 오류'), 'danger');
+        }
+    })
+    .catch(error => {
+        console.error(error);
+        hideLoading(submitBtn, '<i class="fas fa-paper-plane me-2"></i>리뷰 등록하기');
+        showAlert('리뷰 등록 중 오류가 발생했습니다.', 'danger');
+    });
+
+
+
+});
+    
+    // 더 보기 버튼
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            const btn = this;
+            showLoading(btn);
+
+            setTimeout(() => {
+                hideLoading(btn, '<i class="fas fa-plus me-2"></i>더 많은 리뷰 보기');
+                showAlert('모든 리뷰를 불러왔습니다.', 'info');
+                btn.style.display = 'none';
+            }, 1000);
+        });
+    }
+
+    
+    // 도움됨 버튼
+    document.addEventListener('click', function(e) {
+    const btn = e.target.closest('.helpful-btn');
+    if (btn && btn.dataset.helpful !== undefined) {
+        const countSpan = btn.querySelector('.count');
+        if (!countSpan) return; // 안전하게 처리
+
+        let currentCount = parseInt(countSpan.textContent);
+
+        if (btn.classList.contains('active')) {
+            btn.classList.remove('active');
+            btn.style.background = 'none';
+            btn.style.color = '#6c757d';
+            btn.style.borderColor = '#dee2e6';
+            countSpan.textContent = currentCount - 1;
+        } else {
+            btn.classList.add('active');
+            btn.style.background = '#667eea';
+            btn.style.color = 'white';
+            btn.style.borderColor = '#667eea';
+            countSpan.textContent = currentCount + 1;
+        }
+    }
+    });
+});
+
+// 새 리뷰 추가 함수
+function addNewReview(restaurantName, rating, content, visitDate) {
+    const reviewsList = document.getElementById('reviewsList');
+    const newReview = document.createElement('div');
+    newReview.className = 'review-item';
+
+    const stars = Array.from({length: 5}, (_, i) => 
+        i < rating ? '<i class="fas fa-star"></i>' : '<i class="far fa-star"></i>'
+    ).join('');
+
+    const formatDate = new Date(visitDate).toLocaleDateString('ko-KR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+    newReview.innerHTML = `
+        <div class="review-header">
+            <div class="reviewer-info">
+                <div class="reviewer-avatar">나</div>
+                <div>
+                    <div class="fw-bold">나의 리뷰</div>
+                    <div class="rating-stars">${stars}</div>
+                </div>
+            </div>
+            <a href="#" class="restaurant-tag">${restaurantName}</a>
+        </div>
+        <div class="review-content">${content}</div>
+        <div class="review-date">${formatDate}</div>
+        <div class="helpful-section">
+            <button class="helpful-btn" data-helpful="true">
+                <i class="fas fa-thumbs-up me-1"></i>도움됨 <span class="count">0</span>
+            </button>
+        </div>
+    `;
+
+    reviewsList.insertBefore(newReview, reviewsList.firstChild);
+
+    // 애니메이션
+    newReview.style.opacity = '0';
+    newReview.style.transform = 'translateY(20px)';
+    setTimeout(() => {
+        newReview.style.transition = 'all 0.6s ease';
+        newReview.style.opacity = '1';
+        newReview.style.transform = 'translateY(0)';
+    }, 100);
+}
+
+
+// 유틸리티 함수 (base.html에서 정의된 것들 활용)
+function showAlert(message, type = 'info') {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+    alertDiv.style.top = '20px';
+    alertDiv.style.right = '20px';
+    alertDiv.style.zIndex = '9999';
+    alertDiv.style.minWidth = '300px';
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    
+    document.body.appendChild(alertDiv);
+    
+    setTimeout(() => {
+        alertDiv.remove();
+    }, 5000);
+}
+</script>
+{% endblock %}

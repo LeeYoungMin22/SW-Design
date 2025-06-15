@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}FOODI - 대구 달서구 맛집 추천{% endblock %}</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            --card-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --hover-transform: translateY(-5px);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        .bg-gradient-primary {
+            background: var(--primary-gradient);
+        }
+
+        .bg-gradient-secondary {
+            background: var(--secondary-gradient);
+        }
+
+        .navbar-custom {
+            background: rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-2px);
+            color: #FFD93D !important;
+        }
+
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: var(--hover-transform);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .btn-custom {
+            background: var(--secondary-gradient);
+            border: none;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-custom:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            color: white;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .page-header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 60px 0 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-custom {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+
+        .alert-custom {
+            border: none;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 40px 0 20px;
+                margin-bottom: 20px;
+            }
+            
+            .stat-card {
+                margin-bottom: 20px;
+            }
+        }
+
+        {% block extra_css %}{% endblock %}
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark {% if request.endpoint == 'main.index' %}navbar-custom fixed-top{% else %}bg-primary{% endif %}">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('main.index') }}">
+                <i class="fas fa-utensils me-2"></i>FOODI
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.endpoint == 'main.index' %}active{% endif %}" href="{{ url_for('main.index') }}">
+                            <i class="fas fa-home me-1"></i>홈
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.endpoint == 'main.chat_page' %}active{% endif %}" href="{{ url_for('main.chat_page') }}">
+                            <i class="fas fa-comments me-1"></i>AI 추천
+                        </a>
+                    </li>
+                    {% if request.path.startswith('/reviews') %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.endpoint == 'main.reviews_page' %}active{% endif %}" href="{{ url_for('main.reviews_page') }}">
+                            <i class="fas fa-star me-1"></i>리뷰
+                        </a>
+                    </li>
+                    {% endif %}
+                
+                    {% if session.get('user_id') %}
+                        <!-- 로그인 상태: 로그아웃 버튼 표시 -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('auth.logout') }}">
+                                <i class="fas fa-sign-out-alt me-1"></i>로그아웃
+                            </a>
+                        </li>
+                    {% else %}
+                        <!-- 비로그인 상태: 로그인/회원가입 -->
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.endpoint == 'auth.login' %}active{% endif %}" href="{{ url_for('auth.login') }}">
+                                <i class="fas fa-sign-in-alt me-1"></i>로그인
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.endpoint == 'auth.register' %}active{% endif %}" href="{{ url_for('auth.register') }}">
+                                <i class="fas fa-user-plus me-1"></i>회원가입
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="{% if request.endpoint == 'main.index' %}pt-0{% else %}pt-4{% endif %}">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-utensils me-2"></i>FOODI</h5>
+                    <p class="text-muted mb-3">
+                        AI 기반 대구 달서구 맛집 추천 서비스<br>
+                        당신의 완벽한 식사를 위한 똑똑한 선택
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-muted me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-muted"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>서비스</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{{ url_for('main.chat_page') }}" class="text-muted text-decoration-none">AI 추천</a></li>
+                        <li><a href="{{ url_for('main.reviews_page') }}" class="text-muted text-decoration-none">리뷰</a></li>
+                        <li><a href="{{ url_for('main.history_page') }}" class="text-muted text-decoration-none">추천 이력</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>정보</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{{ url_for('main.about') }}" class="text-muted text-decoration-none">서비스 소개</a></li>
+                        <li><a href="{{ url_for('main.api_info') }}" class="text-muted text-decoration-none">API</a></li>
+                        <li><a href="{{ url_for('main.health_check') }}" class="text-muted text-decoration-none">상태 확인</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">이용약관</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6>문의하기</h6>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-envelope me-2"></i>support@foodi.com
+                    </p>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-phone me-2"></i>053-123-4567
+                    </p>
+                    <p class="text-muted mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>대구광역시 달서구
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <small class="text-muted">© 2024 FOODI. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">
+                        Made with <i class="fas fa-heart text-danger"></i> in Daegu
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // 페이지 로딩 애니메이션
+        document.addEventListener('DOMContentLoaded', function() {
+            // 카드 애니메이션
+            const cards = document.querySelectorAll('.card-custom');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+
+            // 네비게이션 스크롤 효과
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        });
+
+        // 유틸리티 함수들
+        function showLoading(element) {
+            element.innerHTML = '<span class="loading-spinner me-2"></span>로딩 중...';
+            element.disabled = true;
+        }
+
+        function hideLoading(element, originalText) {
+            element.innerHTML = originalText;
+            element.disabled = false;
+        }
+
+        function showAlert(message, type = 'info') {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+            alertDiv.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            
+            const container = document.querySelector('.container').first();
+            container.insertBefore(alertDiv, container.firstChild);
+            
+            // 5초 후 자동 제거
+            setTimeout(() => {
+                alertDiv.remove();
+            }, 5000);
+        }
+    </script>
+    
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

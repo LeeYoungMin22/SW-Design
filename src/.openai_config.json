@@ -1,0 +1,5 @@
+{
+  "openai_version": "0.28.1",
+  "api_style": "v0",
+  "solved_at": "posix.times_result(user=0.76, system=0.81, children_user=2.4, children_system=6.31, elapsed=774.1)"
+}

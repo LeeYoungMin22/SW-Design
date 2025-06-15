@@ -1,0 +1,90 @@
+/* FOODI 메인 스타일시트 */
+
+:root {
+	--primary-color: #667eea;
+	--secondary-color: #764ba2;
+	--accent-color: #f093fb;
+	--success-color: #28a745;
+	--warning-color: #ffc107;
+	--danger-color: #dc3545;
+	--info-color: #17a2b8;
+	--text-color: #333;
+	--bg-color: #f8f9fa;
+	--border-color: #dee2e6;
+}
+
+/* 전역 스타일 */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.6;
+	color: var(--text-color);
+	background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+	min-height: 100vh;
+}
+
+/* 유틸리티 클래스 */
+.text-primary { color: var(--primary-color) !important; }
+.text-secondary { color: var(--secondary-color) !important; }
+.bg-primary { background-color: var(--primary-color) !important; }
+.bg-secondary { background-color: var(--secondary-color) !important; }
+
+/* 애니메이션 */
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(20px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+	from { transform: translateX(-100%); }
+	to { transform: translateX(0); }
+}
+
+@keyframes pulse {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.5; }
+}
+
+.fade-in { animation: fadeIn 0.6s ease-out; }
+.slide-in { animation: slideIn 0.6s ease-out; }
+.pulse { animation: pulse 2s infinite; }
+
+/* 커스텀 컴포넌트 */
+.gradient-bg {
+	background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.glass-card {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 15px;
+}
+
+.hover-scale {
+	transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+	transform: scale(1.05);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+	.container {
+			padding-left: 15px;
+			padding-right: 15px;
+	}
+	
+	.card {
+			margin-bottom: 15px;
+	}
+	
+	.btn {
+			width: 100%;
+			margin-bottom: 10px;
+	}
+}

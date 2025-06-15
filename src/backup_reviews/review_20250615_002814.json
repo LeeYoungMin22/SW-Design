@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-06-15T00:28:14.249336",
+  "user_id": 5,
+  "restaurant_name": "가족뜰",
+  "restaurant_address": "가족뜰_기본주소",
+  "rating": 5,
+  "content": "asdawdsadas",
+  "original_data": {
+    "restaurant_name": "가족뜰 ",
+    "visit_date": "2025-06-15",
+    "rating": "5",
+    "content": "asdawdsadas"
+  },
+  "error": "no such column: restaurant_address",
+  "attempted_db_file": "/home/youngmin/anaconda3/envs/foodi_chatbot/src/data/database/foodi.db",
+  "target_db_file": "/home/youngmin/anaconda3/envs/foodi_chatbot/src/data/database/foodi.db",
+  "python_executable": "/home/youngmin/anaconda3/envs/foodi_chatbot/bin/python3"
+}

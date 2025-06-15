@@ -1,0 +1,222 @@
+2025-06-07 13:41:42,724 INFO: 📡 API 블루프린트들이 등록되었습니다.
+2025-06-07 13:41:42,726 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 13:41:42,755 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+2025-06-07 13:41:42,755 INFO: [33mPress CTRL+C to quit[0m
+2025-06-07 13:41:42,757 INFO:  * Restarting with stat
+2025-06-07 13:41:43,279 INFO: 📡 API 블루프린트들이 등록되었습니다.
+2025-06-07 13:41:43,281 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 13:41:43,291 WARNING:  * Debugger is active!
+2025-06-07 13:41:43,294 INFO:  * Debugger PIN: 857-824-700
+2025-06-07 13:41:50,049 INFO: 127.0.0.1 - - [07/Jun/2025 13:41:50] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-07 13:41:50,280 INFO: 127.0.0.1 - - [07/Jun/2025 13:41:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-07 13:42:12,211 INFO: 127.0.0.1 - - [07/Jun/2025 13:42:12] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-07 13:48:27,641 INFO: 127.0.0.1 - - [07/Jun/2025 13:48:27] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-07 13:52:57,071 INFO: 📡 API 블루프린트들이 등록되었습니다.
+2025-06-07 13:52:57,073 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 13:52:57,097 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+2025-06-07 13:52:57,097 INFO: [33mPress CTRL+C to quit[0m
+2025-06-07 13:52:57,099 INFO:  * Restarting with stat
+2025-06-07 13:52:57,640 INFO: 📡 API 블루프린트들이 등록되었습니다.
+2025-06-07 13:52:57,642 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 13:52:57,651 WARNING:  * Debugger is active!
+2025-06-07 13:52:57,652 INFO:  * Debugger PIN: 857-824-700
+2025-06-07 13:53:06,398 INFO: 127.0.0.1 - - [07/Jun/2025 13:53:06] "GET / HTTP/1.1" 200 -
+2025-06-07 13:53:32,171 INFO: 127.0.0.1 - - [07/Jun/2025 13:53:32] "[33mGET /api/chat HTTP/1.1[0m" 404 -
+2025-06-07 13:54:57,550 INFO: 📡 API 블루프린트들이 등록되었습니다.
+2025-06-07 13:54:57,553 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 13:54:57,577 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+2025-06-07 13:54:57,577 INFO: [33mPress CTRL+C to quit[0m
+2025-06-07 13:54:57,578 INFO:  * Restarting with stat
+2025-06-07 13:54:58,098 INFO: 📡 API 블루프린트들이 등록되었습니다.
+2025-06-07 13:54:58,100 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 13:54:58,112 WARNING:  * Debugger is active!
+2025-06-07 13:54:58,113 INFO:  * Debugger PIN: 857-824-700
+2025-06-07 13:55:07,720 INFO: 127.0.0.1 - - [07/Jun/2025 13:55:07] "[33mGET /api/chat HTTP/1.1[0m" 404 -
+2025-06-07 13:55:12,710 INFO: 127.0.0.1 - - [07/Jun/2025 13:55:12] "GET / HTTP/1.1" 200 -
+2025-06-07 13:55:38,740 INFO: 127.0.0.1 - - [07/Jun/2025 13:55:38] "[33mGET /api/chat HTTP/1.1[0m" 404 -
+2025-06-07 14:01:54,139 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:01:54,163 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+2025-06-07 14:01:54,163 INFO: [33mPress CTRL+C to quit[0m
+2025-06-07 14:01:54,164 INFO:  * Restarting with stat
+2025-06-07 14:01:54,706 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:01:54,716 WARNING:  * Debugger is active!
+2025-06-07 14:01:54,717 INFO:  * Debugger PIN: 857-824-700
+2025-06-07 14:02:17,097 INFO: 127.0.0.1 - - [07/Jun/2025 14:02:17] "GET /health HTTP/1.1" 200 -
+2025-06-07 14:02:36,039 INFO: 127.0.0.1 - - [07/Jun/2025 14:02:36] "GET /api HTTP/1.1" 200 -
+2025-06-07 14:03:24,647 INFO: 127.0.0.1 - - [07/Jun/2025 14:03:24] "[33mGET /api/chat HTTP/1.1[0m" 404 -
+2025-06-07 14:03:40,896 INFO: 127.0.0.1 - - [07/Jun/2025 14:03:40] "GET /about HTTP/1.1" 200 -
+2025-06-07 14:04:02,143 INFO: 127.0.0.1 - - [07/Jun/2025 14:04:02] "GET /status HTTP/1.1" 200 -
+2025-06-07 14:08:45,778 INFO: 127.0.0.1 - - [07/Jun/2025 14:08:45] "GET /chat HTTP/1.1" 200 -
+2025-06-07 14:18:13,913 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:18:13,936 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+2025-06-07 14:18:13,937 INFO: [33mPress CTRL+C to quit[0m
+2025-06-07 14:18:13,938 INFO:  * Restarting with stat
+2025-06-07 14:18:14,502 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:18:14,512 WARNING:  * Debugger is active!
+2025-06-07 14:18:14,513 INFO:  * Debugger PIN: 857-824-700
+2025-06-07 14:18:36,052 INFO: 127.0.0.1 - - [07/Jun/2025 14:18:36] "[35m[1mGET /chat HTTP/1.1[0m" 500 -
+2025-06-07 14:18:36,281 INFO: 127.0.0.1 - - [07/Jun/2025 14:18:36] "GET /chat?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-06-07 14:18:36,454 INFO: 127.0.0.1 - - [07/Jun/2025 14:18:36] "GET /chat?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-06-07 14:18:36,483 INFO: 127.0.0.1 - - [07/Jun/2025 14:18:36] "GET /chat?__debugger__=yes&cmd=resource&f=console.png&s=ro66WYuKgbxLtyrw0ozs HTTP/1.1" 200 -
+2025-06-07 14:18:36,809 INFO: 127.0.0.1 - - [07/Jun/2025 14:18:36] "GET /chat?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-06-07 14:21:07,589 INFO: 127.0.0.1 - - [07/Jun/2025 14:21:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-07 14:21:07,771 INFO: 127.0.0.1 - - [07/Jun/2025 14:21:07] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-06-07 14:21:07,881 INFO: 127.0.0.1 - - [07/Jun/2025 14:21:07] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-06-07 14:21:07,907 INFO: 127.0.0.1 - - [07/Jun/2025 14:21:07] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=ro66WYuKgbxLtyrw0ozs HTTP/1.1" 200 -
+2025-06-07 14:21:08,197 INFO: 127.0.0.1 - - [07/Jun/2025 14:21:08] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-06-07 14:33:42,806 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:33:42,829 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+2025-06-07 14:33:42,829 INFO: [33mPress CTRL+C to quit[0m
+2025-06-07 14:33:42,830 INFO:  * Restarting with stat
+2025-06-07 14:33:43,368 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:33:43,379 WARNING:  * Debugger is active!
+2025-06-07 14:33:43,380 INFO:  * Debugger PIN: 857-824-700
+2025-06-07 14:33:48,410 INFO: 127.0.0.1 - - [07/Jun/2025 14:33:48] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-06-07 14:33:48,581 INFO: 127.0.0.1 - - [07/Jun/2025 14:33:48] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-07 14:33:48,700 INFO: 127.0.0.1 - - [07/Jun/2025 14:33:48] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-07 14:33:48,721 INFO: 127.0.0.1 - - [07/Jun/2025 14:33:48] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=emztnV8B63Mzz4Si3Vl3 HTTP/1.1" 200 -
+2025-06-07 14:38:41,089 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:38:41,112 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+2025-06-07 14:38:41,112 INFO: [33mPress CTRL+C to quit[0m
+2025-06-07 14:38:41,113 INFO:  * Restarting with stat
+2025-06-07 14:38:41,643 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:38:41,655 WARNING:  * Debugger is active!
+2025-06-07 14:38:41,656 INFO:  * Debugger PIN: 857-824-700
+2025-06-07 14:38:52,013 INFO: 127.0.0.1 - - [07/Jun/2025 14:38:52] "GET / HTTP/1.1" 200 -
+2025-06-07 14:39:09,555 INFO: 127.0.0.1 - - [07/Jun/2025 14:39:09] "[35m[1mGET /restaurants HTTP/1.1[0m" 500 -
+2025-06-07 14:39:09,859 INFO: 127.0.0.1 - - [07/Jun/2025 14:39:09] "GET /restaurants?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-06-07 14:39:09,859 INFO: 127.0.0.1 - - [07/Jun/2025 14:39:09] "GET /restaurants?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-06-07 14:39:10,083 INFO: 127.0.0.1 - - [07/Jun/2025 14:39:10] "GET /restaurants?__debugger__=yes&cmd=resource&f=console.png&s=yYieZTF786tIv99gKe1Z HTTP/1.1" 200 -
+2025-06-07 14:39:10,155 INFO: 127.0.0.1 - - [07/Jun/2025 14:39:10] "GET /restaurants?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-06-07 14:39:12,898 INFO: 127.0.0.1 - - [07/Jun/2025 14:39:12] "GET /chat HTTP/1.1" 200 -
+2025-06-07 14:40:59,575 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:40:59,587 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+2025-06-07 14:40:59,587 INFO: [33mPress CTRL+C to quit[0m
+2025-06-07 14:40:59,588 INFO:  * Restarting with stat
+2025-06-07 14:41:00,123 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:41:00,133 WARNING:  * Debugger is active!
+2025-06-07 14:41:00,133 INFO:  * Debugger PIN: 857-824-700
+2025-06-07 14:41:10,005 INFO: 127.0.0.1 - - [07/Jun/2025 14:41:10] "GET / HTTP/1.1" 200 -
+2025-06-07 14:49:17,367 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:49:17,379 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+2025-06-07 14:49:17,379 INFO: [33mPress CTRL+C to quit[0m
+2025-06-07 14:49:17,379 INFO:  * Restarting with stat
+2025-06-07 14:49:17,911 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 14:49:17,920 WARNING:  * Debugger is active!
+2025-06-07 14:49:17,920 INFO:  * Debugger PIN: 857-824-700
+2025-06-07 14:49:37,412 INFO: 127.0.0.1 - - [07/Jun/2025 14:49:37] "GET / HTTP/1.1" 200 -
+2025-06-07 14:49:48,701 INFO: 127.0.0.1 - - [07/Jun/2025 14:49:48] "GET /chat HTTP/1.1" 200 -
+2025-06-07 14:50:06,890 INFO: 127.0.0.1 - - [07/Jun/2025 14:50:06] "GET /reviews HTTP/1.1" 200 -
+2025-06-07 14:50:24,327 INFO: 127.0.0.1 - - [07/Jun/2025 14:50:24] "GET / HTTP/1.1" 200 -
+2025-06-07 14:50:26,499 INFO: 127.0.0.1 - - [07/Jun/2025 14:50:26] "[35m[1mGET /restaurants HTTP/1.1[0m" 500 -
+2025-06-07 14:50:26,715 INFO: 127.0.0.1 - - [07/Jun/2025 14:50:26] "[36mGET /restaurants?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-07 14:50:26,804 INFO: 127.0.0.1 - - [07/Jun/2025 14:50:26] "[36mGET /restaurants?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-07 14:50:26,835 INFO: 127.0.0.1 - - [07/Jun/2025 14:50:26] "GET /restaurants?__debugger__=yes&cmd=resource&f=console.png&s=grvkxA0migqa9bVVLYxh HTTP/1.1" 200 -
+2025-06-07 14:50:56,324 INFO: 127.0.0.1 - - [07/Jun/2025 14:50:56] "[35m[1mGET /restaurants HTTP/1.1[0m" 500 -
+2025-06-07 14:50:56,550 INFO: 127.0.0.1 - - [07/Jun/2025 14:50:56] "[36mGET /restaurants?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-06-07 14:50:56,620 INFO: 127.0.0.1 - - [07/Jun/2025 14:50:56] "[36mGET /restaurants?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-06-07 14:50:56,661 INFO: 127.0.0.1 - - [07/Jun/2025 14:50:56] "[36mGET /restaurants?__debugger__=yes&cmd=resource&f=console.png&s=grvkxA0migqa9bVVLYxh HTTP/1.1[0m" 304 -
+2025-06-07 15:02:27,758 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 15:02:27,782 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+2025-06-07 15:02:27,782 INFO: [33mPress CTRL+C to quit[0m
+2025-06-07 15:02:27,783 INFO:  * Restarting with stat
+2025-06-07 15:02:28,307 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 15:02:28,316 WARNING:  * Debugger is active!
+2025-06-07 15:02:28,317 INFO:  * Debugger PIN: 857-824-700
+2025-06-07 15:02:44,102 INFO: 127.0.0.1 - - [07/Jun/2025 15:02:44] "GET / HTTP/1.1" 200 -
+2025-06-07 15:02:45,662 INFO: 127.0.0.1 - - [07/Jun/2025 15:02:45] "GET /restaurants HTTP/1.1" 200 -
+2025-06-07 15:03:03,481 INFO: 127.0.0.1 - - [07/Jun/2025 15:03:03] "GET / HTTP/1.1" 200 -
+2025-06-07 15:11:10,368 INFO: 127.0.0.1 - - [07/Jun/2025 15:11:10] "GET /chat HTTP/1.1" 200 -
+2025-06-07 15:21:28,397 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 15:21:28,422 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+2025-06-07 15:21:28,422 INFO: [33mPress CTRL+C to quit[0m
+2025-06-07 15:21:28,424 INFO:  * Restarting with stat
+2025-06-07 15:21:28,968 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-07 15:21:28,977 WARNING:  * Debugger is active!
+2025-06-07 15:21:28,979 INFO:  * Debugger PIN: 857-824-700
+2025-06-07 15:21:56,619 INFO: 127.0.0.1 - - [07/Jun/2025 15:21:56] "GET / HTTP/1.1" 200 -
+2025-06-07 15:21:58,798 INFO: 127.0.0.1 - - [07/Jun/2025 15:21:58] "GET /chat HTTP/1.1" 200 -
+2025-06-07 15:22:23,296 INFO: 127.0.0.1 - - [07/Jun/2025 15:22:23] "POST /api/chat HTTP/1.1" 200 -
+2025-06-08 14:54:04,002 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 15:07:12,404 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 15:08:18,010 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 15:09:16,254 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 15:10:33,306 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 15:11:15,557 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 15:54:49,579 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 15:54:59,957 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 16:48:11,298 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 16:48:16,530 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 16:50:33,175 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA journal_mode=WAL - locking protocol
+2025-06-08 16:50:43,214 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA synchronous=NORMAL - locking protocol
+2025-06-08 16:50:53,269 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA cache_size=1000 - locking protocol
+2025-06-08 16:50:53,272 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 16:51:18,833 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA journal_mode=WAL - locking protocol
+2025-06-08 16:51:28,874 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA synchronous=NORMAL - locking protocol
+2025-06-08 16:51:38,927 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA cache_size=1000 - locking protocol
+2025-06-08 16:51:38,930 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 16:52:03,040 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA journal_mode=WAL - locking protocol
+2025-06-08 16:52:13,133 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA synchronous=NORMAL - locking protocol
+2025-06-08 16:52:23,231 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA cache_size=1000 - locking protocol
+2025-06-08 16:52:23,233 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 16:57:00,772 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA journal_mode=WAL - locking protocol
+2025-06-08 16:57:10,823 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA synchronous=NORMAL - locking protocol
+2025-06-08 16:57:20,871 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA cache_size=1000 - locking protocol
+2025-06-08 16:57:20,873 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 16:57:36,425 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA journal_mode=WAL - locking protocol
+2025-06-08 16:57:46,485 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA synchronous=NORMAL - locking protocol
+2025-06-08 16:57:56,552 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA cache_size=1000 - locking protocol
+2025-06-08 16:57:56,555 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 16:58:15,266 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA journal_mode=WAL - locking protocol
+2025-06-08 16:58:25,312 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA synchronous=NORMAL - locking protocol
+2025-06-08 16:58:35,361 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA cache_size=1000 - locking protocol
+2025-06-08 16:58:35,363 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 17:04:32,280 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 17:04:32,292 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-08 17:04:32,292 INFO: [33mPress CTRL+C to quit[0m
+2025-06-08 17:04:32,292 INFO:  * Restarting with stat
+2025-06-08 17:04:43,087 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA journal_mode=WAL - locking protocol
+2025-06-08 17:04:53,165 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA synchronous=NORMAL - locking protocol
+2025-06-08 17:05:03,211 WARNING: ⚠️ PRAGMA 설정 중 오류: PRAGMA cache_size=1000 - locking protocol
+2025-06-08 17:05:03,213 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 17:05:03,245 WARNING:  * Debugger is active!
+2025-06-08 17:05:03,246 INFO:  * Debugger PIN: 772-336-911
+2025-06-08 17:07:12,948 INFO: 127.0.0.1 - - [08/Jun/2025 17:07:12] "[33mGET /auth/register HTTP/1.1[0m" 404 -
+2025-06-08 17:23:04,767 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 17:23:11,770 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 17:23:16,223 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.
+2025-06-08 17:24:35,225 INFO: 🍽️ FOODI 애플리케이션이 성공적으로 초기화되었습니다.

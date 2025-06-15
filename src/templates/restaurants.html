@@ -1,0 +1,590 @@
+{% extends "base.html" %}
+
+{% block title %}맛집 목록 - FOODI{% endblock %}
+
+{% block extra_css %}
+<style>
+    .page-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 80px 0 60px;
+    }
+
+    .search-section {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .restaurant-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        margin-bottom: 30px;
+        border: none;
+    }
+
+    .restaurant-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .restaurant-image {
+        height: 200px;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 3rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .restaurant-image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/><circle cx="20" cy="20" r="1" fill="white" opacity="0.1"/><circle cx="80" cy="30" r="1.5" fill="white" opacity="0.1"/><circle cx="30" cy="80" r="1" fill="white" opacity="0.1"/><circle cx="70" cy="70" r="2" fill="white" opacity="0.1"/></svg>');
+    }
+
+    .category-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: rgba(255,255,255,0.9);
+        color: #667eea;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .restaurant-info {
+        padding: 25px;
+    }
+
+    .restaurant-name {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .restaurant-rating {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .rating-stars {
+        color: #ffc107;
+        margin-right: 10px;
+    }
+
+    .rating-text {
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+    .restaurant-address {
+        color: #6c757d;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .restaurant-description {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .restaurant-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn-action {
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        border: 1px solid #dee2e6;
+        background: white;
+        color: #6c757d;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .btn-action:hover {
+        background: #667eea;
+        color: white;
+        border-color: #667eea;
+        text-decoration: none;
+    }
+
+    .btn-action.primary {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        border-color: #667eea;
+    }
+
+    .btn-action.primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    .filter-pills {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .filter-pill {
+        padding: 8px 20px;
+        border-radius: 25px;
+        border: 2px solid #dee2e6;
+        background: white;
+        color: #6c757d;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .filter-pill.active {
+        background: #667eea;
+        color: white;
+        border-color: #667eea;
+    }
+
+    .filter-pill:hover {
+        border-color: #667eea;
+        color: #667eea;
+    }
+
+    .filter-pill.active:hover {
+        color: white;
+    }
+
+    .pagination-custom {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .pagination-custom .page-link {
+        border-radius: 10px;
+        margin: 0 5px;
+        border: 1px solid #dee2e6;
+        color: #667eea;
+        padding: 12px 16px;
+        transition: all 0.3s ease;
+    }
+
+    .pagination-custom .page-link:hover {
+        background: #667eea;
+        color: white;
+        border-color: #667eea;
+    }
+
+    .pagination-custom .page-item.active .page-link {
+        background: #667eea;
+        border-color: #667eea;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 80px 20px;
+        color: #6c757d;
+    }
+
+    .empty-state i {
+        font-size: 5rem;
+        margin-bottom: 20px;
+        color: #dee2e6;
+    }
+
+    .loading-skeleton {
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: loading 1.5s infinite;
+    }
+
+    @keyframes loading {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+    }
+
+    .results-info {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+        .restaurant-actions {
+            justify-content: center;
+        }
+        
+        .filter-pills {
+            justify-content: center;
+        }
+        
+        .results-info {
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-5 fw-bold mb-4">
+                    <i class="fas fa-store me-3"></i>맛집 목록
+                </h1>
+                <p class="lead mb-0">
+                    대구 달서구의 엄선된 맛집들을 둘러보세요
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Search Section -->
+    <div class="search-section">
+        <form method="GET" action="{{ url_for('main.restaurants_page') }}">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="search" class="form-label">맛집 검색</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control" id="search" name="search" 
+                               placeholder="식당 이름, 메뉴, 지역으로 검색..." 
+                               value="{{ current_search if current_search else '' }}">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="category" class="form-label">카테고리</label>
+                    <select class="form-select" id="category" name="category">
+                        <option value="">전체 카테고리</option>
+                        {% for cat in categories %}
+                            <option value="{{ cat }}" {% if current_category == cat %}selected{% endif %}>
+                                {{ cat }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label class="form-label">&nbsp;</label>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-search me-2"></i>검색
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        <!-- Category Filter Pills -->
+        <div class="filter-pills">
+            <span class="filter-pill {% if not current_category %}active{% endif %}" 
+                  onclick="filterByCategory('')">전체</span>
+            {% for cat in categories %}
+                <span class="filter-pill {% if current_category == cat %}active{% endif %}" 
+                      onclick="filterByCategory('{{ cat }}')">{{ cat }}</span>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Results Info -->
+    {% if restaurants %}
+        <div class="results-info">
+            <div>
+                {% if current_search or current_category %}
+                    <strong>검색 결과:</strong> 
+                    {% if current_search %}"{{ current_search }}"{% endif %}
+                    {% if current_category %}{{ current_category }}{% endif %}
+                    에서 {{ restaurants.total }}개의 맛집을 찾았습니다.
+                {% else %}
+                    <strong>전체 {{ restaurants.total }}개의 맛집</strong>이 등록되어 있습니다.
+                {% endif %}
+            </div>
+            <div class="text-muted">
+                {{ restaurants.page }}/{{ restaurants.pages }} 페이지
+            </div>
+        </div>
+    {% endif %}
+
+    <!-- Restaurants Grid -->
+    {% if restaurants and restaurants.items %}
+        <div class="row">
+            {% for restaurant in restaurants.items %}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="restaurant-card">
+                        <div class="restaurant-image">
+                            <div class="category-badge">{{ restaurant.category or '맛집' }}</div>
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="restaurant-info">
+                            <h5 class="restaurant-name">{{ restaurant.name or '맛있는 식당' }}</h5>
+                            
+                            <div class="restaurant-rating">
+                                <div class="rating-stars">
+                                    {% set rating = restaurant.rating or 4.0 %}
+                                    {% for i in range(1, 6) %}
+                                        {% if rating >= i %}
+                                            <i class="fas fa-star"></i>
+                                        {% elif rating >= i - 0.5 %}
+                                            <i class="fas fa-star-half-alt"></i>
+                                        {% else %}
+                                            <i class="far fa-star"></i>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <span class="rating-text">{{ "%.1f"|format(rating) }} ({{ restaurant.review_count or 0 }}개 리뷰)</span>
+                            </div>
+                            
+                            <div class="restaurant-address">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                {{ restaurant.address or '대구 달서구' }}
+                            </div>
+                            
+                            <div class="restaurant-description">
+                                {{ restaurant.description or '맛있는 음식과 친절한 서비스를 제공하는 식당입니다.' }}
+                            </div>
+                            
+                            <div class="restaurant-actions">
+                                <button class="btn-action primary" onclick="getRecommendation('{{ restaurant.name }}')">
+                                    <i class="fas fa-robot me-1"></i>AI 추천받기
+                                </button>
+                                <button class="btn-action" onclick="viewDetails({{ restaurant.id if restaurant.id else 1 }})">
+                                    <i class="fas fa-info-circle me-1"></i>상세보기
+                                </button>
+                                <button class="btn-action" onclick="showOnMap('{{ restaurant.address or "대구 달서구" }}')">
+                                    <i class="fas fa-map me-1"></i>지도보기
+                                </button>
+                                <button class="btn-action" onclick="addToFavorites({{ restaurant.id if restaurant.id else 1 }})">
+                                    <i class="fas fa-heart me-1"></i>찜하기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- Pagination -->
+        {% if restaurants.pages > 1 %}
+            <nav class="pagination-custom">
+                <ul class="pagination">
+                    {% if restaurants.has_prev %}
+                        <li class="page-item">
+                            <a class="page-link" href="{{ url_for('main.restaurants_page', page=restaurants.prev_num, search=current_search, category=current_category) }}">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+                    
+                    {% for page_num in restaurants.iter_pages() %}
+                        {% if page_num %}
+                            {% if page_num != restaurants.page %}
+                                <li class="page-item">
+                                    <a class="page-link" href="{{ url_for('main.restaurants_page', page=page_num, search=current_search, category=current_category) }}">
+                                        {{ page_num }}
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="page-item active">
+                                    <span class="page-link">{{ page_num }}</span>
+                                </li>
+                            {% endif %}
+                        {% else %}
+                            <li class="page-item disabled">
+                                <span class="page-link">...</span>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                    
+                    {% if restaurants.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="{{ url_for('main.restaurants_page', page=restaurants.next_num, search=current_search, category=current_category) }}">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        {% endif %}
+
+    {% else %}
+        <!-- Empty State -->
+        <div class="empty-state">
+            <i class="fas fa-store"></i>
+            <h4 class="mb-3">
+                {% if current_search or current_category %}
+                    검색 결과가 없습니다
+                {% else %}
+                    등록된 맛집이 없습니다
+                {% endif %}
+            </h4>
+            <p class="lead text-muted mb-4">
+                {% if current_search or current_category %}
+                    다른 검색어나 카테고리로 다시 시도해보세요.
+                {% else %}
+                    맛집 데이터를 준비하고 있습니다. 곧 다양한 맛집들을 만나보실 수 있습니다!
+                {% endif %}
+            </p>
+            {% if current_search or current_category %}
+                <a href="{{ url_for('main.restaurants_page') }}" class="btn btn-primary">
+                    <i class="fas fa-refresh me-2"></i>전체 목록 보기
+                </a>
+            {% else %}
+                <a href="{{ url_for('main.chat_page') }}" class="btn btn-primary">
+                    <i class="fas fa-robot me-2"></i>AI 추천 받기
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 카드 애니메이션
+    const cards = document.querySelectorAll('.restaurant-card');
+    cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        setTimeout(() => {
+            card.style.transition = 'all 0.6s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, index * 100);
+    });
+});
+
+// 카테고리 필터 함수
+function filterByCategory(category) {
+    const currentUrl = new URL(window.location);
+    currentUrl.searchParams.set('category', category);
+    currentUrl.searchParams.delete('page'); // 페이지 초기화
+    window.location.href = currentUrl.toString();
+}
+
+// 액션 함수들
+function getRecommendation(restaurantName) {
+    if (confirm(`${restaurantName}과 비슷한 맛집을 AI로 추천받으시겠습니까?`)) {
+        // 실제로는 추천 API 호출하고 채팅 페이지로 이동
+        window.location.href = `/chat?restaurant=${encodeURIComponent(restaurantName)}`;
+    }
+}
+
+function viewDetails(restaurantId) {
+    showAlert('상세 정보를 불러오고 있습니다...', 'info');
+    // 실제로는 상세 페이지로 이동
+    setTimeout(() => {
+        showAlert('상세 페이지 기능을 준비 중입니다.', 'warning');
+    }, 1000);
+}
+
+function showOnMap(address) {
+    // Google Maps 또는 네이버 지도로 이동
+    const query = encodeURIComponent(address);
+    const mapUrl = `https://map.naver.com/v5/search/${query}`;
+    window.open(mapUrl, '_blank');
+}
+
+function addToFavorites(restaurantId) {
+    // 찜하기 토글
+    const btn = event.target.closest('.btn-action');
+    const icon = btn.querySelector('i');
+    
+    if (icon.classList.contains('fas')) {
+        // 찜 해제
+        icon.classList.remove('fas');
+        icon.classList.add('far');
+        btn.style.background = 'white';
+        btn.style.color = '#6c757d';
+        showAlert('찜 목록에서 제거되었습니다.', 'info');
+    } else {
+        // 찜 추가
+        icon.classList.remove('far');
+        icon.classList.add('fas');
+        btn.style.background = '#dc3545';
+        btn.style.color = 'white';
+        btn.style.borderColor = '#dc3545';
+        showAlert('찜 목록에 추가되었습니다!', 'success');
+    }
+}
+
+// 검색 폼 향상
+const searchForm = document.querySelector('form');
+if (searchForm) {
+    searchForm.addEventListener('submit', function(e) {
+        const searchInput = this.querySelector('#search');
+        const submitBtn = this.querySelector('button[type="submit"]');
+        
+        if (searchInput.value.trim()) {
+            showLoading(submitBtn);
+        }
+    });
+}
+
+// 유틸리티 함수들
+function showAlert(message, type = 'info') {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+    alertDiv.style.top = '20px';
+    alertDiv.style.right = '20px';
+    alertDiv.style.zIndex = '9999';
+    alertDiv.style.minWidth = '300px';
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    
+    document.body.appendChild(alertDiv);
+    
+    setTimeout(() => {
+        alertDiv.remove();
+    }, 5000);
+}
+
+function showLoading(element) {
+    const originalText = element.innerHTML;
+    element.innerHTML = '<span class="loading-spinner me-2"></span>검색 중...';
+    element.disabled = true;
+    element.dataset.originalText = originalText;
+}
+</script>
+{% endblock %}

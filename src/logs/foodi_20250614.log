@@ -1,0 +1,726 @@
+[2025-06-14 20:22:44] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.103:5000
+[2025-06-14 20:22:44] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 20:22:44] INFO in _internal:  * Restarting with stat
+[2025-06-14 20:22:45] WARNING in _internal:  * Debugger is active!
+[2025-06-14 20:22:45] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 20:23:21] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 20:23:21] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:23:21] "[32mGET / HTTP/1.1[0m" 302 -
+[2025-06-14 20:23:21] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:23:21] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-14 20:23:22] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:23:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-14 20:23:30] INFO in session_manager: 새 세션 생성: foodi_session_5_1749867810_523160ba
+[2025-06-14 20:23:30] INFO in routes: 사용자 로그인: dudtkdwns123 (세션: foodi_session_5_1749867810_523160ba)
+[2025-06-14 20:23:30] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:23:30] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+[2025-06-14 20:23:30] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:23:30] "GET / HTTP/1.1" 200 -
+[2025-06-14 20:23:32] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:23:32] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 20:23:40] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 20:23:40] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:23:40] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 20:23:48] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:23:48] "GET /reviews?restaurant_id=1 HTTP/1.1" 200 -
+[2025-06-14 20:24:59] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:24:59] "GET / HTTP/1.1" 200 -
+[2025-06-14 20:25:04] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:25:04] "GET / HTTP/1.1" 200 -
+[2025-06-14 20:25:06] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:25:06] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 20:25:08] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:25:08] "GET /reviews HTTP/1.1" 200 -
+[2025-06-14 20:25:09] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:25:09] "GET /history HTTP/1.1" 200 -
+[2025-06-14 20:25:11] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:25:11] "GET /history HTTP/1.1" 200 -
+[2025-06-14 20:25:12] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:25:12] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 20:25:15] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:25:15] "GET /reviews HTTP/1.1" 200 -
+[2025-06-14 20:25:45] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:25:45] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 20:25:46] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:25:46] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 20:26:25] INFO in routes: SessionManager 종료: 활성 세션 1개
+[2025-06-14 20:31:33] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 20:31:33] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 20:31:33] INFO in _internal:  * Restarting with stat
+[2025-06-14 20:31:34] WARNING in _internal:  * Debugger is active!
+[2025-06-14 20:31:34] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 20:31:52] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 20:31:55] WARNING in database: ⚠️ PRAGMA 설정 중 오류: PRAGMA journal_mode=WAL - locking protocol
+[2025-06-14 20:32:04] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:32:04] "[32mGET / HTTP/1.1[0m" 302 -
+[2025-06-14 20:32:05] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:32:05] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-14 20:32:05] WARNING in database: ⚠️ PRAGMA 설정 중 오류: PRAGMA synchronous=NORMAL - locking protocol
+[2025-06-14 20:32:05] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:32:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-14 20:32:15] WARNING in database: ⚠️ PRAGMA 설정 중 오류: PRAGMA cache_size=1000 - locking protocol
+[2025-06-14 20:32:25] ERROR in routes: 컨텍스트 프로세서 오류: (sqlite3.OperationalError) locking protocol
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.password_hash AS users_password_hash, users.location AS users_location, users.preferred_radius AS users_preferred_radius, users.food_preferences AS users_food_preferences, users.budget_range AS users_budget_range, users.dietary_restrictions AS users_dietary_restrictions, users.is_active AS users_is_active, users.is_admin AS users_is_admin, users.created_at AS users_created_at, users.last_login AS users_last_login, users.current_session_id AS users_current_session_id, users.session_data AS users_session_data 
+FROM users 
+WHERE users.id = ?]
+[parameters: (5,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2025-06-14 20:32:25] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:32:25] "GET /reviews HTTP/1.1" 200 -
+[2025-06-14 20:32:25] WARNING in database: ⚠️ PRAGMA 설정 중 오류: PRAGMA journal_mode=WAL - locking protocol
+[2025-06-14 20:32:27] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 20:32:36] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 20:32:36] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 20:32:36] INFO in _internal:  * Restarting with stat
+[2025-06-14 20:32:37] WARNING in _internal:  * Debugger is active!
+[2025-06-14 20:32:37] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 20:32:41] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 20:32:41] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:32:41] "[32mGET / HTTP/1.1[0m" 302 -
+[2025-06-14 20:32:41] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:32:41] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-14 20:32:41] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:32:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-14 20:32:56] WARNING in database: ⚠️ PRAGMA 설정 중 오류: PRAGMA journal_mode=WAL - locking protocol
+[2025-06-14 20:33:06] WARNING in database: ⚠️ PRAGMA 설정 중 오류: PRAGMA synchronous=NORMAL - locking protocol
+[2025-06-14 20:33:16] WARNING in database: ⚠️ PRAGMA 설정 중 오류: PRAGMA cache_size=1000 - locking protocol
+[2025-06-14 20:33:26] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 20:37:36] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 20:37:36] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 20:37:36] INFO in _internal:  * Restarting with stat
+[2025-06-14 20:37:37] WARNING in _internal:  * Debugger is active!
+[2025-06-14 20:37:37] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 20:37:42] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 20:37:42] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:37:42] "[32mGET / HTTP/1.1[0m" 302 -
+[2025-06-14 20:37:43] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:37:43] "GET /auth/login HTTP/1.1" 200 -
+[2025-06-14 20:37:43] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:37:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-14 20:37:49] INFO in session_manager: 새 세션 생성: foodi_session_5_1749868669_94b84d7a
+[2025-06-14 20:37:49] INFO in routes: 사용자 로그인: dudtkdwns123 (세션: foodi_session_5_1749868669_94b84d7a)
+[2025-06-14 20:37:49] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:37:49] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+[2025-06-14 20:37:49] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:37:49] "GET / HTTP/1.1" 200 -
+[2025-06-14 20:37:55] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:37:55] "GET /reviews HTTP/1.1" 200 -
+[2025-06-14 20:38:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:38:02] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 20:38:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:38:02] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 20:39:51] INFO in routes: SessionManager 종료: 활성 세션 1개
+[2025-06-14 20:44:52] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 20:44:52] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 20:44:52] INFO in _internal:  * Restarting with stat
+[2025-06-14 20:44:53] WARNING in _internal:  * Debugger is active!
+[2025-06-14 20:44:53] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 20:44:58] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 20:44:58] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:44:58] "GET / HTTP/1.1" 200 -
+[2025-06-14 20:45:03] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:45:03] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 20:45:09] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 20:45:09] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:45:09] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 20:45:17] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:45:17] "GET /reviews?restaurant_id=unknown HTTP/1.1" 200 -
+[2025-06-14 20:48:01] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 20:48:03] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 20:48:03] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 20:48:03] INFO in _internal:  * Restarting with stat
+[2025-06-14 20:48:04] WARNING in _internal:  * Debugger is active!
+[2025-06-14 20:48:04] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 20:48:07] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 20:48:07] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:48:07] "GET / HTTP/1.1" 200 -
+[2025-06-14 20:48:09] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:48:09] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 20:48:16] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 20:48:16] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:48:16] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 20:48:26] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:48:26] "GET /reviews?restaurant_id=unknown HTTP/1.1" 200 -
+[2025-06-14 20:50:28] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 20:50:31] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 20:50:31] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 20:50:31] INFO in _internal:  * Restarting with stat
+[2025-06-14 20:50:32] WARNING in _internal:  * Debugger is active!
+[2025-06-14 20:50:32] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 20:50:35] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 20:50:35] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:50:35] "GET / HTTP/1.1" 200 -
+[2025-06-14 20:50:38] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:50:38] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 20:50:44] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 20:50:44] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:50:44] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 20:50:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:50:56] "GET /reviews?restaurant_id=unknown HTTP/1.1" 200 -
+[2025-06-14 20:51:44] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 20:51:46] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 20:51:46] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 20:51:46] INFO in _internal:  * Restarting with stat
+[2025-06-14 20:51:48] WARNING in _internal:  * Debugger is active!
+[2025-06-14 20:51:48] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 20:51:50] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 20:51:50] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:51:50] "GET / HTTP/1.1" 200 -
+[2025-06-14 20:51:52] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:51:52] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 20:52:02] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 20:52:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:52:02] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 20:52:13] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:52:13] "GET /reviews?restaurant_id=unknown HTTP/1.1" 200 -
+[2025-06-14 20:57:30] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 20:57:33] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 20:57:33] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 20:57:33] INFO in _internal:  * Restarting with stat
+[2025-06-14 20:57:34] WARNING in _internal:  * Debugger is active!
+[2025-06-14 20:57:34] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 20:57:42] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 20:57:42] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:57:42] "GET / HTTP/1.1" 200 -
+[2025-06-14 20:57:43] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:57:43] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 20:57:52] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 20:57:52] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 20:57:52] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:00:19] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 21:00:21] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:00:21] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:00:21] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:00:22] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:00:22] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:00:26] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 21:00:26] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:26] "GET /reviews?restaurant_id=unknown HTTP/1.1" 200 -
+[2025-06-14 21:00:28] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:28] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:00:36] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:00:36] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:36] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:00:36] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:36] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:00:46] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:46] "GET /reviews?restaurant_id=unknown HTTP/1.1" 200 -
+[2025-06-14 21:00:46] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:00:51] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:51] "GET /reviews?restaurant_id=unknown HTTP/1.1" 200 -
+[2025-06-14 21:00:51] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:51] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:00:55] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:55] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:00:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:00:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:00:57] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:57] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:00:57] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:57] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:00:58] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:00:58] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:01:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:01:02] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:01:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:01:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:01:13] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:01:13] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:01:13] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:01:37] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 21:01:39] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:01:39] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:01:39] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:01:40] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:01:40] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:01:45] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 21:01:45] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:01:45] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:01:45] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:01:45] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:01:56] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:01:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:01:56] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:06:14] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 21:06:17] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:06:17] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:06:17] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:06:18] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:06:18] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:08:04] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:08:04] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:08:04] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:08:05] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:08:05] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:08:11] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 21:08:11] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:08:11] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:08:11] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:08:11] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:08:18] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:08:18] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:08:18] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:08:35] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:08:35] "GET /reviews?restaurant_id=unknown HTTP/1.1" 200 -
+[2025-06-14 21:08:35] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:08:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:09:41] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 21:09:45] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:09:45] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:09:45] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:09:46] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:09:46] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:09:49] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 21:09:49] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:09:49] "GET / HTTP/1.1" 200 -
+[2025-06-14 21:09:49] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:09:49] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:09:50] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:09:50] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:09:50] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:09:50] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:10:01] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:10:01] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:10:01] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:13:04] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 21:13:06] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:13:06] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:13:06] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:13:07] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:13:07] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:13:14] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 21:13:14] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:13:14] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:13:14] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:13:14] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:13:21] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:13:21] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:13:21] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:13:31] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:13:31] "GET /reviews?restaurant_id=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 21:13:31] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:13:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:14:52] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 21:14:55] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:14:55] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:14:55] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:14:56] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:14:56] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:14:59] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 21:14:59] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:14:59] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:14:59] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:14:59] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:15:09] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:15:09] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:15:09] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:17:05] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 21:17:18] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:17:18] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:17:18] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:17:19] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:17:19] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:17:24] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 21:17:24] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:17:24] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:17:24] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:17:24] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:17:33] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:17:33] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:17:33] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:17:43] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:17:43] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 21:17:43] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:17:43] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:20:17] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 21:20:19] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:20:19] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:20:19] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:20:20] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:20:20] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:20:28] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 21:20:28] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:20:28] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 21:20:28] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:20:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:20:35] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:20:35] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:20:35] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:20:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:20:43] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:20:43] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:20:43] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:20:54] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:20:54] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 21:20:55] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:20:55] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:21:10] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:21:10] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 21:21:10] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:21:10] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 21:32:20] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 21:32:23] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:32:23] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:32:23] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:32:24] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:32:24] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:32:25] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 21:32:25] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:32:25] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:32:25] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:32:25] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:32:36] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:32:36] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:32:36] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:32:46] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:32:46] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 21:32:46] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:32:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:32:52] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:32:52] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 21:32:52] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:32:52] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 21:32:52] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:32:52] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 21:33:22] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:33:22] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:33:27] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:33:27] "[31m[1mGET /reviews/submit HTTP/1.1[0m" 405 -
+[2025-06-14 21:33:41] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:33:41] "[31m[1mGET /reviews/submit HTTP/1.1[0m" 405 -
+[2025-06-14 21:47:55] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 21:52:43] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:52:43] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:52:43] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:52:44] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:52:44] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:52:46] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 21:52:46] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:52:46] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:52:46] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:52:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:52:56] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:52:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:52:56] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:53:06] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:53:06] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 21:53:06] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:53:06] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:53:10] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:53:10] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 21:53:10] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:53:10] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 21:53:10] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:53:10] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 21:57:34] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 21:57:37] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 21:57:37] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 21:57:37] INFO in _internal:  * Restarting with stat
+[2025-06-14 21:57:38] WARNING in _internal:  * Debugger is active!
+[2025-06-14 21:57:38] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 21:57:46] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 21:57:46] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:57:46] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 21:57:46] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:57:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:57:52] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 21:57:52] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:57:52] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 21:58:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:58:02] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 21:58:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:58:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 21:58:06] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:58:06] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 21:58:06] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:58:06] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 21:58:06] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 21:58:06] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 22:02:04] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 22:02:06] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 22:02:06] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 22:02:06] INFO in _internal:  * Restarting with stat
+[2025-06-14 22:02:07] WARNING in _internal:  * Debugger is active!
+[2025-06-14 22:02:07] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 22:02:15] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 22:02:15] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:02:15] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 22:02:15] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:02:15] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:02:24] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 22:02:24] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:02:24] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 22:02:34] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:02:34] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 22:02:34] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:02:34] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:02:47] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 22:05:33] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 22:05:33] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 22:05:33] INFO in _internal:  * Restarting with stat
+[2025-06-14 22:05:34] WARNING in _internal:  * Debugger is active!
+[2025-06-14 22:05:34] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 22:05:39] INFO in routes: SessionManager 초기화 완료
+[2025-06-14 22:05:39] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:05:39] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 22:05:39] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:05:39] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:05:48] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 22:05:48] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:05:48] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 22:05:58] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:05:58] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 22:05:58] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:05:58] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:06:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:06:02] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 22:06:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:06:02] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 22:06:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:06:02] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 22:16:33] INFO in routes: SessionManager 종료: 활성 세션 0개
+[2025-06-14 22:16:35] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 22:16:35] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 22:16:35] INFO in _internal:  * Restarting with stat
+[2025-06-14 22:16:36] WARNING in _internal:  * Debugger is active!
+[2025-06-14 22:16:36] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 22:16:43] ERROR in routes: 컨텍스트 프로세서 오류: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:16:43] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:16:43] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 22:16:43] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:16:43] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:16:43] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:16:52] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 22:16:52] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:16:52] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 22:17:03] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:17:03] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:17:03] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 22:17:04] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:17:04] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:17:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:17:09] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:17:09] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 22:17:09] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:17:09] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:17:09] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 22:17:09] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:17:09] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 22:21:05] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 22:21:05] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 22:21:05] INFO in _internal:  * Restarting with stat
+[2025-06-14 22:21:06] WARNING in _internal:  * Debugger is active!
+[2025-06-14 22:21:06] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 22:21:10] ERROR in routes: 컨텍스트 프로세서 오류: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:21:10] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:21:10] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 22:21:10] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:21:10] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:21:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:21:25] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 22:21:25] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:21:25] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 22:21:35] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:21:35] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:21:35] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 22:21:35] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:21:35] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:21:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:21:39] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:21:39] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 22:21:39] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:21:39] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:21:39] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 22:21:39] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:21:39] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 22:34:56] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 22:34:56] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 22:34:56] INFO in _internal:  * Restarting with stat
+[2025-06-14 22:34:57] WARNING in _internal:  * Debugger is active!
+[2025-06-14 22:34:57] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 22:35:02] ERROR in routes: 컨텍스트 프로세서 오류: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:35:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:35:02] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 22:35:02] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:35:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:35:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:35:09] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 22:35:09] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:35:09] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 22:35:20] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:35:20] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:35:20] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 22:35:20] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:35:20] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:35:20] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:35:24] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:35:24] "[31m[1mPOST /reviews/submit HTTP/1.1[0m" 400 -
+[2025-06-14 22:35:24] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:35:24] "[31m[1mPOST /reviews/submit HTTP/1.1[0m" 400 -
+[2025-06-14 22:35:24] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:35:24] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:35:24] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 22:35:55] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 22:35:55] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 22:35:55] INFO in _internal:  * Restarting with stat
+[2025-06-14 22:35:56] WARNING in _internal:  * Debugger is active!
+[2025-06-14 22:35:56] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 22:36:00] ERROR in routes: 컨텍스트 프로세서 오류: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:36:00] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:36:00] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 22:36:00] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:36:00] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:36:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:36:08] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 22:36:08] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:36:08] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 22:36:19] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:36:19] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:36:19] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 22:36:20] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:36:20] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:36:20] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:36:37] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:36:37] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:36:37] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 22:36:37] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:36:37] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:36:37] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:36:47] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 22:36:47] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:36:47] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 22:39:41] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 22:39:41] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 22:39:41] INFO in _internal:  * Restarting with stat
+[2025-06-14 22:39:42] WARNING in _internal:  * Debugger is active!
+[2025-06-14 22:39:42] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 22:39:48] ERROR in routes: 컨텍스트 프로세서 오류: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:39:48] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:39:48] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 22:39:48] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:39:48] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:39:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:39:56] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 22:39:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:39:56] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 22:40:06] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:40:06] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:40:06] "GET /reviews?restaurant_name=가족뜰 HTTP/1.1" 200 -
+[2025-06-14 22:40:06] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:40:06] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:40:06] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:40:14] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:40:14] "[31m[1mPOST /reviews/submit HTTP/1.1[0m" 400 -
+[2025-06-14 22:40:15] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:40:15] "[31m[1mPOST /reviews/submit HTTP/1.1[0m" 400 -
+[2025-06-14 22:40:15] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:40:15] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:40:15] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 22:47:16] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 22:47:16] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 22:47:16] INFO in _internal:  * Restarting with stat
+[2025-06-14 22:47:17] WARNING in _internal:  * Debugger is active!
+[2025-06-14 22:47:17] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 22:47:21] ERROR in routes: 컨텍스트 프로세서 오류: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:47:21] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:47:21] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 22:47:21] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:47:21] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:47:21] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:47:30] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 22:47:30] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:47:30] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 22:47:40] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:47:40] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:47:40] "GET /reviews?restaurant_name=가족뜰%20&restaurant_address=대구%20수성구%20수성로%20212-5 HTTP/1.1" 200 -
+[2025-06-14 22:47:40] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:47:40] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:47:40] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 22:47:47] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:47:47] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 22:47:47] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:47:47] "[31m[1mPOST /reviews/submit HTTP/1.1[0m" 400 -
+[2025-06-14 22:47:47] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 22:47:47] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 22:47:47] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 23:14:31] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 23:14:31] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 23:14:31] INFO in _internal:  * Restarting with stat
+[2025-06-14 23:14:31] WARNING in _internal:  * Debugger is active!
+[2025-06-14 23:14:31] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 23:14:38] ERROR in routes: 컨텍스트 프로세서 오류: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:14:38] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:14:38] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 23:14:38] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:14:38] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:14:38] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:14:46] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 23:14:46] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:14:46] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 23:14:55] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:14:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:14:56] "GET /reviews?restaurant_name=가족뜰%20&restaurant_address=대구%20수성구%20수성로%20212-5 HTTP/1.1" 200 -
+[2025-06-14 23:14:56] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:14:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:14:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:14:59] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:14:59] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 23:14:59] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:14:59] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:14:59] "[31m[1mPOST /reviews/submit HTTP/1.1[0m" 400 -
+[2025-06-14 23:14:59] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:14:59] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 23:20:35] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 23:20:35] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 23:20:35] INFO in _internal:  * Restarting with stat
+[2025-06-14 23:20:36] WARNING in _internal:  * Debugger is active!
+[2025-06-14 23:20:36] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 23:20:38] ERROR in routes: 컨텍스트 프로세서 오류: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:20:38] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:20:38] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 23:20:38] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:20:38] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:20:38] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:20:46] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 23:20:46] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:20:46] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 23:20:56] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:20:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:20:56] "GET /reviews?restaurant_name=가족뜰%20&restaurant_address=대구%20수성구%20수성로%20212-5 HTTP/1.1" 200 -
+[2025-06-14 23:20:56] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:20:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:20:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:21:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:21:02] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 23:21:02] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:21:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:21:02] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 23:21:02] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:21:02] "[31m[1mPOST /reviews/submit HTTP/1.1[0m" 400 -
+[2025-06-14 23:28:32] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 23:28:32] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 23:28:32] INFO in _internal:  * Restarting with stat
+[2025-06-14 23:28:32] WARNING in _internal:  * Debugger is active!
+[2025-06-14 23:28:32] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 23:28:37] ERROR in routes: 컨텍스트 프로세서 오류: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:28:37] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:28:37] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 23:28:37] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:28:37] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:28:37] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:28:44] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 23:28:44] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:28:44] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 23:28:56] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:28:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:28:56] "GET /reviews?restaurant_name=가족뜰%20&restaurant_address=대구%20수성구%20수성로%20212-5 HTTP/1.1" 200 -
+[2025-06-14 23:28:56] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:28:56] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:28:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:29:01] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:29:01] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:29:01] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 23:29:01] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:29:01] "[31m[1mPOST /reviews/submit HTTP/1.1[0m" 400 -
+[2025-06-14 23:29:11] WARNING in database: ⚠️ PRAGMA 설정 중 오류: PRAGMA journal_mode=WAL - locking protocol
+[2025-06-14 23:29:21] WARNING in database: ⚠️ PRAGMA 설정 중 오류: PRAGMA synchronous=NORMAL - locking protocol
+[2025-06-14 23:29:31] WARNING in database: ⚠️ PRAGMA 설정 중 오류: PRAGMA cache_size=1000 - locking protocol
+[2025-06-14 23:29:31] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:29:31] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 23:31:04] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 23:31:04] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 23:31:04] INFO in _internal:  * Restarting with stat
+[2025-06-14 23:31:05] WARNING in _internal:  * Debugger is active!
+[2025-06-14 23:31:05] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 23:31:11] ERROR in routes: 컨텍스트 프로세서 오류: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:31:11] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:31:11] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 23:31:11] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:31:11] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:31:11] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:31:21] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 23:31:21] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:31:21] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 23:31:31] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:31:31] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:31:31] "GET /reviews?restaurant_name=가족뜰%20&restaurant_address=대구%20수성구%20수성로%20212-5 HTTP/1.1" 200 -
+[2025-06-14 23:31:31] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:31:31] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:31:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:31:37] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:31:37] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 23:31:37] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:31:37] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:31:37] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 23:31:37] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:31:37] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 23:32:32] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 23:32:32] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 23:32:32] INFO in _internal:  * Restarting with stat
+[2025-06-14 23:32:32] WARNING in _internal:  * Debugger is active!
+[2025-06-14 23:32:32] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 23:32:35] ERROR in routes: 컨텍스트 프로세서 오류: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:32:35] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:32:35] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 23:32:35] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:32:35] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:32:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:32:43] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 23:32:43] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:32:43] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 23:32:53] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:32:53] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:32:53] "GET /reviews?restaurant_name=낙동생오리%20월광수변공원점%20&restaurant_address=대구%20달서구%20수밭길%2015 HTTP/1.1" 200 -
+[2025-06-14 23:32:53] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:32:53] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:32:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:32:57] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:32:57] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 23:32:57] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:32:57] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 23:32:57] ERROR in routes: 컨텍스트 프로세서 오류: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[User(users)]'. Original exception was: When initializing mapper Mapper[User(users)], expression 'Review' failed to locate a name ('Review'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+[2025-06-14 23:32:57] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:32:57] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 23:38:23] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 23:38:23] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 23:38:23] INFO in _internal:  * Restarting with stat
+[2025-06-14 23:38:24] WARNING in _internal:  * Debugger is active!
+[2025-06-14 23:38:24] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 23:38:28] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:38:28] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:38:28] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 23:38:28] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:38:28] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:38:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:38:39] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 23:38:39] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:38:39] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 23:38:51] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:38:51] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:38:51] "GET /reviews?restaurant_name=가족뜰%20&restaurant_address=대구%20수성구%20수성로%20212-5 HTTP/1.1" 200 -
+[2025-06-14 23:38:51] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:38:51] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:38:51] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:38:55] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:38:55] "[35m[1mPOST /reviews/submit HTTP/1.1[0m" 500 -
+[2025-06-14 23:38:55] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:38:55] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:38:55] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 23:38:55] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:38:55] "[31m[1mPOST /reviews/submit HTTP/1.1[0m" 400 -
+[2025-06-14 23:44:00] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 23:44:00] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 23:44:00] INFO in _internal:  * Restarting with stat
+[2025-06-14 23:44:01] WARNING in _internal:  * Debugger is active!
+[2025-06-14 23:44:01] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 23:44:03] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:44:03] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:44:03] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 23:44:04] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:44:04] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:44:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:44:09] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 23:44:09] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:44:09] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 23:44:19] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:44:19] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:44:19] "GET /reviews?restaurant_name=가족뜰%20&restaurant_address=대구%20수성구%20수성로%20212-5 HTTP/1.1" 200 -
+[2025-06-14 23:44:19] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:44:19] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:44:19] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:44:23] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:44:23] "POST /reviews/submit HTTP/1.1" 200 -
+[2025-06-14 23:44:24] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:44:24] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:44:24] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 23:44:24] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:44:24] "POST /reviews/submit HTTP/1.1" 200 -
+[2025-06-14 23:44:25] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:44:25] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:44:25] "GET /reviews?restaurant_name=가족뜰%20&restaurant_address=대구%20수성구%20수성로%20212-5 HTTP/1.1" 200 -
+[2025-06-14 23:44:26] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:44:26] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:44:26] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:55:48] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.64:5000
+[2025-06-14 23:55:48] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-14 23:55:48] INFO in _internal:  * Restarting with stat
+[2025-06-14 23:55:49] WARNING in _internal:  * Debugger is active!
+[2025-06-14 23:55:49] INFO in _internal:  * Debugger PIN: 137-526-411
+[2025-06-14 23:55:53] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:55:53] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:55:53] "GET /chat HTTP/1.1" 200 -
+[2025-06-14 23:55:53] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:55:53] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:55:53] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:56:00] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-14 23:56:00] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:56:00] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-14 23:56:12] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:56:12] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:56:12] "GET /reviews?restaurant_name=가족뜰%20&restaurant_address=대구%20수성구%20수성로%20212-5 HTTP/1.1" 200 -
+[2025-06-14 23:56:12] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:56:12] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:56:12] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-14 23:56:16] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:56:16] "POST /reviews/submit HTTP/1.1" 200 -
+[2025-06-14 23:56:17] ERROR in routes: 컨텍스트 프로세서 오류: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+[2025-06-14 23:56:17] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:56:17] "[33mPOST /api/reviews HTTP/1.1[0m" 404 -
+[2025-06-14 23:56:17] INFO in _internal: 127.0.0.1 - - [14/Jun/2025 23:56:17] "POST /reviews/submit HTTP/1.1" 200 -

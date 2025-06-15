@@ -1,0 +1,55 @@
+# ■ Flask 웹 프레임워크
+# ■ OpenAI API 연동 패키지
+# ■ 자연어 처리 및 감정 분석 라이브러리 (NLTK, TextBlob, KoNLPy)
+# ■ 데이터베이스 관리 (SQLAlchemy)
+# ■ 테스트 및 개발 도구
+# ■ 프로덕션 배포 관련 패키지		
+# FOODI 맛집 추천 챗봇 - Python 패키지 의존성
+
+# 핵심 웹 프레임워크
+Flask==3.0.0
+Flask-SQLAlchemy==3.1.1
+flask-cors==4.0.0
+Flask-Caching==2.1.0
+Flask-Migrate==4.0.5
+python-dotenv==1.0.0
+requests==2.31.0
+
+# 데이터 처리
+pandas==2.1.4
+numpy==1.24.4
+
+# 환경 변수
+python-dotenv==1.0.0
+
+# OpenAI API
+openai==1.0.0
+
+# 웹 스크래핑
+beautifulsoup4==4.12.2
+
+# 이미지 처리
+Pillow==10.1.0
+
+# 구글 맵스 API
+googlemaps==4.10.0
+
+# Jupyter 환경
+ipython
+jupyter
+notebook
+
+# 데이터 시각화
+matplotlib
+plotly
+seaborn
+
+# 의존성 패키지들
+tenacity>=6.2.0
+pygments>=2.4.0
+packaging
+tornado>=6.1
+psutil
+
+# 기타 유틸리티
+python-dateutil==2.8.2

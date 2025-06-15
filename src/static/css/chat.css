@@ -1,0 +1,63 @@
+/* 채팅 인터페이스 전용 스타일 */
+
+.chat-container {
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.chat-messages {
+	flex: 1;
+	overflow-y: auto;
+	padding: 20px;
+	background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.message {
+	margin-bottom: 20px;
+	animation: fadeIn 0.3s ease-in;
+}
+
+.message-bubble {
+	max-width: 80%;
+	padding: 15px 20px;
+	border-radius: 20px;
+	word-wrap: break-word;
+	position: relative;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.message.user .message-bubble {
+	background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+	color: white;
+	margin-left: auto;
+	border-bottom-right-radius: 5px;
+}
+
+.message.bot .message-bubble {
+	background: white;
+	color: #333;
+	border-bottom-left-radius: 5px;
+}
+
+/* 스크롤바 스타일링 */
+.chat-messages::-webkit-scrollbar {
+	width: 8px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 10px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+	background: var(--primary-color);
+	border-radius: 10px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+	background: var(--secondary-color);
+}

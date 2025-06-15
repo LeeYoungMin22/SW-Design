@@ -1,0 +1,975 @@
+{% extends "base.html" %}
+
+{% block title %}AI 맛집 추천 - FOODI{% endblock %}
+
+{% block extra_css %}
+<style>
+    body {
+        background: #f5f5f5;
+    }
+
+    .chat-container {
+        max-width: 900px;
+        margin: 20px auto;
+        height: calc(100vh - 140px);
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    }
+
+    .chat-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .chat-title {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .ai-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        backdrop-filter: blur(10px);
+    }
+
+    .chat-status {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
+
+    .status-indicator {
+        width: 8px;
+        height: 8px;
+        background: #4ade80;
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+
+    .chat-messages {
+        flex: 1;
+        overflow-y: auto;
+        padding: 30px;
+        background: linear-gradient(to bottom, #fafafa 0%, #ffffff 100%);
+    }
+
+    .message {
+        margin-bottom: 25px;
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .message.user {
+        flex-direction: row-reverse;
+    }
+
+    .message-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+    }
+
+    .message.bot .message-avatar {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+    }
+
+    .message.user .message-avatar {
+        background: linear-gradient(45deg, #4ade80, #06b6d4);
+        color: white;
+    }
+
+    .message-content {
+        max-width: 70%;
+        min-width: 200px;
+    }
+
+    .message-bubble {
+        padding: 18px 22px;
+        border-radius: 20px;
+        line-height: 1.6;
+        position: relative;
+        word-wrap: break-word;
+    }
+
+    .message.bot .message-bubble {
+        background: white;
+        border: 2px solid #f1f3f4;
+        color: #333;
+        border-radius: 20px 20px 20px 5px;
+    }
+
+    .message.user .message-bubble {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        border-radius: 20px 20px 5px 20px;
+    }
+
+    .message-time {
+        font-size: 0.75rem;
+        opacity: 0.7;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .typing-indicator {
+        display: none;
+        padding: 20px;
+        text-align: center;
+        color: #6c757d;
+        font-style: italic;
+    }
+
+    .typing-dots {
+        display: inline-flex;
+        gap: 4px;
+        margin-left: 8px;
+    }
+
+    .typing-dot {
+        width: 6px;
+        height: 6px;
+        background: #6c757d;
+        border-radius: 50%;
+        animation: typing 1.4s infinite ease-in-out;
+    }
+
+    .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+    .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+    .typing-dot:nth-child(3) { animation-delay: 0s; }
+
+    @keyframes typing {
+        0%, 80%, 100% { transform: scale(0.8); opacity: 0.5; }
+        40% { transform: scale(1); opacity: 1; }
+    }
+
+    .chat-input-area {
+        background: white;
+        padding: 25px 30px;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .input-container {
+        display: flex;
+        gap: 15px;
+        align-items: flex-end;
+    }
+
+    .message-input {
+        flex: 1;
+        border: 2px solid #e5e7eb;
+        border-radius: 25px;
+        padding: 15px 20px;
+        font-size: 1rem;
+        resize: none;
+        max-height: 120px;
+        min-height: 50px;
+        transition: all 0.3s ease;
+        background: #fafafa;
+    }
+
+    .message-input:focus {
+        outline: none;
+        border-color: #667eea;
+        background: white;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    .send-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    .send-button:hover:not(:disabled) {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    .send-button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .quick-actions {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+
+    .quick-action {
+        background: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 20px;
+        padding: 8px 16px;
+        font-size: 0.85rem;
+        color: #6c757d;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .quick-action:hover {
+        border-color: #667eea;
+        color: #667eea;
+        background: #f8faff;
+    }
+
+    .chat-tips {
+        background: #f8faff;
+        border: 1px solid #e0e7ff;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .recommendation-card {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 15px 0;
+    }
+
+    .restaurant-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+
+    .restaurant-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+
+    .btn-action {
+        background: rgba(255,255,255,0.2);
+        border: 1px solid rgba(255,255,255,0.3);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .btn-action:hover {
+        background: rgba(255,255,255,0.3);
+        color: white;
+        text-decoration: none;
+    }
+
+    .btn-action:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .info-unavailable {
+        color: rgba(255,255,255,0.7);
+        font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+        .chat-container {
+            margin: 10px;
+            height: calc(100vh - 20px);
+            border-radius: 15px;
+        }
+        
+        .chat-header {
+            padding: 20px;
+        }
+        
+        .chat-messages {
+            padding: 20px;
+        }
+        
+        .chat-input-area {
+            padding: 20px;
+        }
+        
+        .message-content {
+            max-width: 85%;
+            min-width: 150px;
+        }
+        
+        .input-container {
+            gap: 10px;
+        }
+        
+        .send-button {
+            width: 45px;
+            height: 45px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid p-0">
+    <div class="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <div class="chat-title">
+                <div class="ai-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div>
+                    <h4 class="mb-1">FOODI AI 맛집 추천</h4>
+                    <div class="chat-status">
+                        <div class="status-indicator"></div>
+                        <span>온라인 · 즉시 응답</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="{{ url_for('main.index') }}" class="btn btn-outline-light btn-sm">
+                    <i class="fas fa-home me-2"></i>홈으로
+                </a>
+            </div>
+        </div>
+
+        <!-- Chat Messages -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- Welcome Message -->
+            <div class="message bot">
+                <div class="message-avatar">AI</div>
+                <div class="message-content">
+                    <div class="message-bubble">
+                        안녕하세요! 👋 FOODI AI입니다.<br><br>
+                        {% if chat_data.openai_enabled %}
+                            저는 <strong>{{ chat_data.model_name }}</strong> 모델을 사용하여 대구 달서구의 맛집을 정확하고 개인화된 방식으로 추천해드립니다! 🤖
+                        {% else %}
+                            현재 기본 추천 시스템으로 운영되고 있습니다. 곧 더 나은 AI 서비스로 업그레이드될 예정입니다! 🔧
+                        {% endif %}
+                        <br><br>
+                        <strong>어떤 도움이 필요하신가요?</strong>
+                        <ul style="margin: 15px 0; padding-left: 20px;">
+                            <li>특정 음식 종류나 분위기의 맛집 추천</li>
+                            <li>예산과 위치를 고려한 맛집 찾기</li>
+                            <li>특별한 날을 위한 레스토랑 추천</li>
+                            <li>메뉴나 맛에 대한 상세 정보</li>
+                        </ul>
+                        편하게 말씀해주세요! 😊
+                    </div>
+                    <div class="message-time">방금 전</div>
+                </div>
+            </div>
+
+            <!-- System Status (OpenAI 상태 표시) -->
+            {% if chat_data.openai_enabled %}
+                <div class="chat-tips" style="border-color: #28a745;">
+                    <h6 class="text-success mb-3">
+                        <i class="fas fa-check-circle me-2"></i>{{ chat_data.model_name }} AI 활성화됨
+                    </h6>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <small><strong>총 {{ chat_data.total_restaurants }}개</strong> 맛집 데이터</small>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <small><strong>{{ chat_data.categories|length }}개</strong> 카테고리 지원</small>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <small><strong>자연어 처리:</strong> 고급 의도 분석</small>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <small><strong>개인화:</strong> 맞춤형 추천</small>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="chat-tips" style="border-color: #ffc107;">
+                    <h6 class="text-warning mb-3">
+                        <i class="fas fa-exclamation-triangle me-2"></i>기본 추천 시스템 운영 중
+                    </h6>
+                    <p class="mb-0">
+                        <small>
+                            현재 기본 키워드 매칭 방식으로 운영되고 있습니다. 
+                            OpenAI API 키를 설정하면 더 정확한 AI 추천을 받으실 수 있습니다.
+                        </small>
+                    </p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typingIndicator">
+            AI가 답변을 준비하고 있습니다
+            <div class="typing-dots">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+        </div>
+
+        <!-- Chat Input -->
+        <div class="chat-input-area">
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <div class="quick-action" onclick="sendQuickMessage('가족과 함께 갈 수 있는 한식당 추천해줘')">
+                    <i class="fas fa-users"></i>가족 모임
+                </div>
+                <div class="quick-action" onclick="sendQuickMessage('분위기 좋은 데이트 코스 맛집 추천')">
+                    <i class="fas fa-heart"></i>데이트 코스
+                </div>
+                <div class="quick-action" onclick="sendQuickMessage('혼자 가기 좋은 가성비 맛집')">
+                    <i class="fas fa-user"></i>혼밥 맛집
+                </div>
+                <div class="quick-action" onclick="sendQuickMessage('점심시간에 빠르게 먹을 수 있는 곳')">
+                    <i class="fas fa-clock"></i>점심 추천
+                </div>
+                <div class="quick-action" onclick="sendQuickMessage('야식으로 좋은 배달 가능한 곳')">
+                    <i class="fas fa-moon"></i>야식/배달
+                </div>
+                <div class="quick-action" onclick="sendQuickMessage('특별한 날 기념할 수 있는 고급 레스토랑')">
+                    <i class="fas fa-star"></i>특별한 날
+                </div>
+                <div class="quick-action" onclick="sendQuickMessage('주차 가능한 넓은 한식당')">
+                    <i class="fas fa-parking"></i>주차 가능
+                </div>
+                <div class="quick-action" onclick="sendQuickMessage('성서동 근처 맛집 추천해줘')">
+                    <i class="fas fa-map-marker-alt"></i>성서동 근처
+                </div>
+            </div>
+
+            <!-- Message Input -->
+            <div class="input-container">
+                <textarea 
+                    class="message-input" 
+                    id="messageInput" 
+                    placeholder="어떤 맛집을 찾고 계신가요? 예: '가족과 함께 갈 수 있는 한식당 추천해줘'" 
+                    rows="1"></textarea>
+                <button class="send-button" id="sendButton" onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const messageInput = document.getElementById('messageInput');
+    const sendButton = document.getElementById('sendButton');
+    const chatMessages = document.getElementById('chatMessages');
+    const typingIndicator = document.getElementById('typingIndicator');
+
+    // Auto-resize textarea
+    messageInput.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+        
+        // Enable/disable send button
+        sendButton.disabled = !this.value.trim();
+    });
+
+    // Send message on Enter (Shift+Enter for new line)
+    messageInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            sendMessage();
+        }
+    });
+
+    // Initial state
+    sendButton.disabled = true;
+});
+
+// undefined 값 안전하게 처리하는 유틸리티 함수들
+function safeValue(value, defaultValue = '정보 없음') {
+    if (value === undefined || value === null || value === 'undefined' || value === 'null' || value === '') {
+        return defaultValue;
+    }
+    return String(value).trim() || defaultValue;
+}
+
+function safeNumber(value, defaultValue = 0) {
+    if (value === undefined || value === null || value === 'undefined' || value === 'null' || value === '') {
+        return defaultValue;
+    }
+    const num = parseFloat(value);
+    return isNaN(num) ? defaultValue : num;
+}
+
+function safeArray(value, defaultValue = []) {
+    if (!Array.isArray(value)) {
+        return defaultValue;
+    }
+    return value.filter(item => item && item !== 'undefined' && item !== 'null' && item !== '');
+}
+
+function formatPhoneNumber(phone) {
+    const cleanPhone = safeValue(phone, '');
+    if (cleanPhone === '정보 없음' || cleanPhone === '') {
+        return '전화번호 정보 없음';
+    }
+    
+    // 숫자만 추출
+    const digits = cleanPhone.replace(/\D/g, '');
+    
+    if (digits.length >= 10) {
+        if (digits.startsWith('02')) {
+            return `02-${digits.slice(2, 6)}-${digits.slice(6)}`;
+        } else if (digits.length === 10) {
+            return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`;
+        } else if (digits.length === 11) {
+            return `${digits.slice(0, 3)}-${digits.slice(3, 7)}-${digits.slice(7)}`;
+        }
+    }
+    
+    return digits.length >= 8 ? cleanPhone : '전화번호 정보 없음';
+}
+
+function formatCategory(category) {
+    const safeCategory = safeValue(category, '음식점');
+    if (safeCategory === '정보 없음') {
+        return '음식점';
+    }
+    
+    // '>' 기준으로 분리하여 마지막 유효한 카테고리 반환
+    const parts = safeCategory.split(' > ').map(part => part.trim()).filter(part => part && part !== 'undefined');
+    return parts.length > 0 ? parts[parts.length - 1] : '음식점';
+}
+
+function formatAddress(address) {
+    const safeAddr = safeValue(address, '주소 정보 없음');
+    if (safeAddr === '정보 없음') {
+        return '주소 정보 없음';
+    }
+    return safeAddr;
+}
+
+function formatRating(rating) {
+    const safeRating = safeNumber(rating, 0);
+    if (safeRating <= 0) {
+        return { stars: '☆☆☆☆☆', value: '평점 없음' };
+    }
+    
+    const fullStars = Math.floor(safeRating);
+    const emptyStars = 5 - fullStars;
+    const starsDisplay = '★'.repeat(fullStars) + '☆'.repeat(emptyStars);
+    
+    return { 
+        stars: starsDisplay, 
+        value: safeRating.toFixed(1) 
+    };
+}
+
+function addMessage(content, isUser = false, isRecommendation = false) {
+    const chatMessages = document.getElementById('chatMessages');
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `message ${isUser ? 'user' : 'bot'}`;
+    
+    const now = new Date();
+    const timeString = now.toLocaleTimeString('ko-KR', { 
+        hour: '2-digit', 
+        minute: '2-digit' 
+    });
+    
+    if (isRecommendation) {
+        messageDiv.innerHTML = `
+            <div class="message-avatar">${isUser ? '나' : 'AI'}</div>
+            <div class="message-content">
+                ${content}
+                <div class="message-time">${timeString}</div>
+            </div>
+        `;
+    } else {
+        messageDiv.innerHTML = `
+            <div class="message-avatar">${isUser ? '나' : 'AI'}</div>
+            <div class="message-content">
+                <div class="message-bubble">${content}</div>
+                <div class="message-time">${timeString}</div>
+            </div>
+        `;
+    }
+    
+    chatMessages.appendChild(messageDiv);
+    
+    // 애니메이션
+    messageDiv.style.opacity = '0';
+    messageDiv.style.transform = 'translateY(20px)';
+    setTimeout(() => {
+        messageDiv.style.transition = 'all 0.3s ease';
+        messageDiv.style.opacity = '1';
+        messageDiv.style.transform = 'translateY(0)';
+    }, 100);
+    
+    scrollToBottom();
+}
+
+function addRecommendationCard(restaurant) {
+    console.log(restaurant);
+    // 안전한 데이터 처리
+    const name = safeValue(restaurant.name, '이름 없음');
+    const category = formatCategory(restaurant.category);
+    const location = safeValue(restaurant.location, '위치 정보 없음');
+    const address = formatAddress(restaurant.address);
+    const phone = formatPhoneNumber(restaurant.phone);
+    const description = safeValue(restaurant.description, '맛집 정보를 준비 중입니다.');
+    const rating = formatRating(restaurant.rating);
+    const reviewCount = safeNumber(restaurant.review_count, 0);
+    const specialties = safeArray(restaurant.specialties);
+    const restaurantId = safeValue(restaurant.id, 'unknown');
+    
+    // 추가 정보 처리 (카카오 API 데이터)
+    const distance = safeValue(restaurant.distance_text || restaurant.distance, '');
+    const formattedPhone = safeValue(restaurant.formatted_phone || phone, phone);
+    const displayAddress = safeValue(restaurant.display_address || address, address);
+    
+    const recommendationHtml = `
+        <div class="recommendation-card">
+            <div class="restaurant-info">
+                <div>
+                    <h6 class="mb-1">${name}</h6>
+                    <small>${category}${location !== '위치 정보 없음' ? ` · ${location}` : ''}</small>
+                    <div class="mt-1">
+                        <i class="fas fa-map-marker-alt me-1"></i>
+                        <small>${displayAddress}</small>
+                    </div>
+                    ${distance && distance !== '정보 없음' ? `
+                        <div class="mt-1">
+                            <i class="fas fa-route me-1"></i>
+                            <small>${distance}</small>
+                        </div>
+                    ` : ''}
+                </div>
+                <div class="text-end">
+                    <div class="text-warning mb-1">
+                        ${rating.stars} ${rating.value}
+                    </div>
+                    ${reviewCount > 0 ? `<small class="text-white-50">${reviewCount}개 리뷰</small>` : '<small class="text-white-50">리뷰 정보 없음</small>'}
+                </div>
+            </div>
+            <p class="mb-3">${description}</p>
+            ${specialties.length > 0 ? `
+                <div class="mb-3">
+                    <small class="text-white-50">추천 메뉴: </small>
+                    ${specialties.map(menu => `<span class="badge bg-light text-dark me-1">${menu}</span>`).join('')}
+                </div>
+            ` : ''}
+            <div class="restaurant-actions">
+                ${displayAddress !== '주소 정보 없음' ? `
+                    <button class="btn-action" onclick="showOnMap('${displayAddress}')">
+                        <i class="fas fa-map-marker-alt"></i>위치보기
+                    </button>
+                ` : `
+                    <button class="btn-action" disabled title="주소 정보 없음">
+                        <i class="fas fa-map-marker-alt"></i>주소 없음
+                    </button>
+                `}
+                <button class="btn-action" onclick="showOnMap('${displayAddress}')">
+                    <i class="fas fa-map-marker-alt"></i>위치보기
+                </button>
+                <button class="btn-action" onclick="writeReview('${name}', '${displayAddress}')">
+                    <i class="fas fa-clock"></i>리뷰 작성
+                </button>
+            </div>
+        </div>
+    `;
+    
+    addMessage(recommendationHtml, false, true);
+}
+
+function showTyping() {
+    const typingIndicator = document.getElementById('typingIndicator');
+    typingIndicator.style.display = 'block';
+    scrollToBottom();
+}
+
+function hideTyping() {
+    const typingIndicator = document.getElementById('typingIndicator');
+    typingIndicator.style.display = 'none';
+}
+
+function scrollToBottom() {
+    const chatMessages = document.getElementById('chatMessages');
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function sendMessage() {
+    const messageInput = document.getElementById('messageInput');
+    const message = messageInput.value.trim();
+    
+    if (!message) return;
+    
+    // 사용자 메시지 추가
+    addMessage(message, true);
+    
+    // 입력창 초기화
+    messageInput.value = '';
+    messageInput.style.height = 'auto';
+    document.getElementById('sendButton').disabled = true;
+    
+    // 타이핑 표시
+    showTyping();
+    
+    // 실제 AI 응답 호출
+    generateAIResponse(message);
+}
+
+function sendQuickMessage(message) {
+    const messageInput = document.getElementById('messageInput');
+    messageInput.value = message;
+    messageInput.style.height = 'auto';
+    messageInput.style.height = Math.min(messageInput.scrollHeight, 120) + 'px';
+    document.getElementById('sendButton').disabled = false;
+    messageInput.focus();
+}
+
+async function generateAIResponse(userMessage) {
+    try {
+        // API 호출
+        const response = await fetch('/api/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                message: userMessage
+            })
+        });
+
+        const data = await response.json();
+        
+        // 타이핑 숨기기
+        hideTyping();
+
+        if (data.success) {
+            // AI 응답 메시지 표시
+            const aiResponse = safeValue(data.response, '죄송합니다. 응답을 생성할 수 없습니다.');
+            addMessage(aiResponse);
+            
+            // 추천 맛집들 표시 (순차적으로)
+            if (data.restaurants && Array.isArray(data.restaurants) && data.restaurants.length > 0) {
+                setTimeout(() => {
+                    data.restaurants.forEach((restaurant, index) => {
+                        setTimeout(() => {
+                            addRecommendationCard(restaurant);
+                        }, index * 800);
+                    });
+                }, 1200);
+                
+                // 통계 정보 표시 (OpenAI 사용 시)
+                const poweredBy = safeValue(data.powered_by, '');
+                if (poweredBy.includes('OpenAI')) {
+                    setTimeout(() => {
+                        const totalCandidates = safeNumber(data.total_candidates, 0);
+                        const statsMessage = `
+                            <div style="background: rgba(102, 126, 234, 0.1); padding: 15px; border-radius: 10px; margin-top: 15px;">
+                                <small class="text-muted">
+                                    <i class="fas fa-chart-bar me-2"></i>
+                                    ${totalCandidates}개 후보 중에서 ${data.restaurants.length}개를 엄선했습니다<br>
+                                    <i class="fas fa-robot me-2"></i>
+                                    Powered by ${poweredBy}
+                                </small>
+                            </div>
+                        `;
+                        addMessage(statsMessage);
+                    }, (data.restaurants.length * 800) + 1500);
+                }
+            }
+            
+            // 추가 도움말
+            setTimeout(() => {
+                const helpMessage = data.restaurants && data.restaurants.length > 0 
+                    ? '추천 결과가 마음에 드시나요? 다른 조건으로 더 찾아보거나 궁금한 점이 있으시면 언제든 말씀해주세요! 😊'
+                    : '다른 조건이나 지역으로 다시 검색해보시거나, 구체적인 요구사항을 말씀해주시면 더 정확한 추천을 해드릴 수 있어요! 🔍';
+                
+                addMessage(helpMessage);
+            }, (data.restaurants?.length || 0) * 800 + 3000);
+            
+        } else {
+            // 오류 응답 처리
+            const fallbackResponse = safeValue(data.fallback_response, '');
+            const errorMessage = safeValue(data.error, '알 수 없는 오류가 발생했습니다.');
+            
+            if (fallbackResponse) {
+                addMessage(fallbackResponse);
+            } else {
+                addMessage(`죄송합니다. ${errorMessage} 다시 시도해주세요. 🔧`);
+            }
+            
+            // 오류 시 도움말 제공
+            setTimeout(() => {
+                addMessage('다음과 같이 질문해보세요:<br>• "가족과 함께 갈 수 있는 한식당"<br>• "데이트하기 좋은 분위기 있는 양식당"<br>• "성서동 근처 가성비 좋은 맛집" 💡');
+            }, 2000);
+        }
+        
+    } catch (error) {
+        console.error('API 호출 오류:', error);
+        hideTyping();
+        
+        // 네트워크 오류 처리
+        addMessage('네트워크 연결에 문제가 있습니다. 인터넷 연결을 확인하고 다시 시도해주세요. 🌐');
+        
+        setTimeout(() => {
+            addMessage('문제가 지속되면 새로고침(F5)을 시도해보세요. 📱');
+        }, 2000);
+    }
+}
+
+// 액션 함수들
+function callRestaurant(phone, name) {
+    const safePhone = safeValue(phone, '');
+    const safeName = safeValue(name, '맛집');
+    
+    if (safePhone !== '정보 없음' && safePhone !== '전화번호 정보 없음' && safePhone !== '') {
+        if (confirm(`${safeName}(${safePhone})로 전화를 걸까요?`)) {
+            window.location.href = `tel:${safePhone}`;
+        }
+    } else {
+        showAlert('전화번호 정보가 없습니다.', 'warning');
+    }
+}
+
+function writeReview(name, display_address) {
+    console.log(name);
+    const button = event?.target;
+    if (button) {
+        button.disabled = true;
+        button.textContent = '처리 중...';
+    }
+
+    setTimeout(() => {
+        console.log("===========(03) 리다이렉트 시작");
+
+        try {
+            const reviewsUrl = `/reviews?restaurant_name=${encodeURIComponent(name)} &restaurant_address=${encodeURIComponent(display_address)} `;
+            console.log(`리다이렉트 URL: ${reviewsUrl}`);
+            window.location.href = reviewsUrl;
+        } catch (error) {
+            console.error('리다이렉트 오류:', error);
+            addMessage(`리뷰 페이지로 이동 중 오류가 발생했습니다. 수동으로 이동해주세요.`, false);
+            setTimeout(() => {
+                window.location.href = '/reviews';
+            }, 2000);
+        }
+    }, 1000);
+}
+
+
+function showOnMap(address) {
+    const safeAddress = safeValue(address, '');
+    
+    if (safeAddress !== '정보 없음' && safeAddress !== '주소 정보 없음' && safeAddress !== '') {
+        // 네이버 지도로 이동
+        const query = encodeURIComponent(safeAddress);
+        const mapUrl = `https://map.naver.com/v5/search/${query}`;
+        window.open(mapUrl, '_blank');
+    } else {
+        showAlert('주소 정보가 없습니다.', 'warning');
+    }
+}
+
+function getMoreInfo(restaurantId) {
+    const safeId = safeValue(restaurantId, 'unknown');
+    
+    // 상세 정보 요청
+    addMessage('상세 정보를 불러오고 있습니다...', true);
+    
+    setTimeout(() => {
+        addMessage(`상세 정보 페이지 기능을 준비 중입니다. 더 자세한 정보는 전화 문의 부탁드려요! 📞`);
+    }, 1000);
+}
+
+function addToFavorites(restaurantId, restaurantName) {
+    const safeId = safeValue(restaurantId, 'unknown');
+    const safeName = safeValue(restaurantName, '맛집');
+    
+    // 찜하기 기능
+    addMessage(`${safeName}을(를) 찜 목록에 추가하고 싶으시군요!`, true);
+    
+    setTimeout(() => {
+        addMessage(`${safeName}이(가) 찜 목록에 추가되었습니다! ❤️ 찜 목록은 마이페이지에서 확인하실 수 있어요.`);
+    }, 1000);
+}
+
+// 유틸리티 함수들 (base.html에서 정의된 것들 활용)
+function showAlert(message, type = 'info') {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+    alertDiv.style.top = '20px';
+    alertDiv.style.right = '20px';
+    alertDiv.style.zIndex = '9999';
+    alertDiv.style.minWidth = '300px';
+    alertDiv.innerHTML = `
+        ${safeValue(message, '알림')}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    
+    document.body.appendChild(alertDiv);
+    
+    setTimeout(() => {
+        alertDiv.remove();
+    }, 5000);
+}
+
+// 초기 애니메이션
+window.addEventListener('load', function() {
+    const messages = document.querySelectorAll('.message');
+    messages.forEach((msg, index) => {
+        msg.style.opacity = '0';
+        msg.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+            msg.style.transition = 'all 0.6s ease';
+            msg.style.opacity = '1';
+            msg.style.transform = 'translateY(0)';
+        }, index * 200);
+    });
+});
+</script>
+{% endblock %}

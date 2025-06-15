@@ -1,0 +1,357 @@
+[2025-06-07 16:43:50] INFO in app: 🚀 FOODI 챗봇 서버 시작
+[2025-06-07 16:44:45] INFO in app: 🚀 FOODI 챗봇 서버 시작
+[2025-06-07 16:45:43] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 16:45:43] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 16:45:43] INFO in _internal:  * Restarting with stat
+[2025-06-07 16:45:44] WARNING in _internal:  * Debugger is active!
+[2025-06-07 16:45:44] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 16:45:53] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 16:45:53] "GET / HTTP/1.1" 200 -
+[2025-06-07 16:45:54] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 16:45:54] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 16:46:22] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 16:46:27] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 16:46:27] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 16:46:27] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 16:54:02] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 16:54:02] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 16:54:02] INFO in _internal:  * Restarting with stat
+[2025-06-07 16:54:03] WARNING in _internal:  * Debugger is active!
+[2025-06-07 16:54:03] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 16:54:18] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 16:54:18] "GET / HTTP/1.1" 200 -
+[2025-06-07 16:54:20] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 16:54:20] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 16:54:51] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 16:54:51] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 16:54:51] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 17:02:48] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:02:48] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-07 17:02:54] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:02:54] "GET /restaurants?search=&category=한식 HTTP/1.1" 200 -
+[2025-06-07 17:02:58] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:02:58] "GET /restaurants?search=&category=중식 HTTP/1.1" 200 -
+[2025-06-07 17:03:10] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:03:10] "GET /restaurants?search=용산동&category=중식 HTTP/1.1" 200 -
+[2025-06-07 17:03:16] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:03:16] "GET /reviews HTTP/1.1" 200 -
+[2025-06-07 17:03:23] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:03:23] "GET /history HTTP/1.1" 200 -
+[2025-06-07 17:22:45] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:22:45] "GET /reviews HTTP/1.1" 200 -
+[2025-06-07 17:23:12] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:23:12] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-07 17:24:32] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:24:32] "GET / HTTP/1.1" 200 -
+[2025-06-07 17:24:51] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:24:51] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-07 17:37:53] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:37:53] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 17:38:44] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 17:38:44] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:38:44] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 17:51:29] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:51:29] "GET /health HTTP/1.1" 200 -
+[2025-06-07 17:51:36] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:51:36] "GET /api HTTP/1.1" 200 -
+[2025-06-07 17:51:45] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:51:45] "GET /about HTTP/1.1" 200 -
+[2025-06-07 17:51:52] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:51:52] "[33mGET /촘ㅅ HTTP/1.1[0m" 404 -
+[2025-06-07 17:51:59] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:51:59] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 17:54:28] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 17:54:28] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 17:54:28] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 18:19:37] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 18:19:37] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 18:19:37] INFO in _internal:  * Restarting with stat
+[2025-06-07 18:19:38] WARNING in _internal:  * Debugger is active!
+[2025-06-07 18:19:38] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 18:20:17] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:20:17] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 18:20:29] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 18:20:29] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:20:29] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 18:23:21] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 18:23:21] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 18:23:21] INFO in _internal:  * Restarting with stat
+[2025-06-07 18:23:22] WARNING in _internal:  * Debugger is active!
+[2025-06-07 18:23:22] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 18:23:34] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:23:34] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 18:23:41] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 18:23:41] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:23:41] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 18:25:07] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 18:25:07] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 18:25:07] INFO in _internal:  * Restarting with stat
+[2025-06-07 18:25:08] WARNING in _internal:  * Debugger is active!
+[2025-06-07 18:25:08] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 18:25:23] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:25:23] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 18:25:27] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:25:27] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 18:31:33] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 18:31:33] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 18:31:33] INFO in _internal:  * Restarting with stat
+[2025-06-07 18:31:33] WARNING in _internal:  * Debugger is active!
+[2025-06-07 18:31:33] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 18:31:43] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:31:43] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 18:31:46] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:31:46] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 18:34:56] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 18:34:56] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 18:34:56] INFO in _internal:  * Restarting with stat
+[2025-06-07 18:34:57] WARNING in _internal:  * Debugger is active!
+[2025-06-07 18:34:57] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 18:35:05] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:35:05] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 18:35:09] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:35:09] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 18:55:26] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 18:55:26] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 18:55:26] INFO in _internal:  * Restarting with stat
+[2025-06-07 18:55:27] WARNING in _internal:  * Debugger is active!
+[2025-06-07 18:55:27] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 18:55:40] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:55:40] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 18:55:44] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:55:44] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 18:56:56] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 18:56:56] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 18:56:56] INFO in _internal:  * Restarting with stat
+[2025-06-07 18:56:56] WARNING in _internal:  * Debugger is active!
+[2025-06-07 18:56:56] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 18:57:07] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:57:07] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 18:57:12] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 18:57:12] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 19:00:15] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 19:00:15] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 19:00:15] INFO in _internal:  * Restarting with stat
+[2025-06-07 19:00:16] WARNING in _internal:  * Debugger is active!
+[2025-06-07 19:00:16] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 19:00:26] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:00:26] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 19:00:29] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:00:29] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 19:06:56] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 19:06:56] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 19:06:56] INFO in _internal:  * Restarting with stat
+[2025-06-07 19:06:57] WARNING in _internal:  * Debugger is active!
+[2025-06-07 19:06:57] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 19:07:07] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:07:07] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 19:07:11] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:07:11] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 19:11:58] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 19:11:58] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 19:11:58] INFO in _internal:  * Restarting with stat
+[2025-06-07 19:11:59] WARNING in _internal:  * Debugger is active!
+[2025-06-07 19:11:59] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 19:12:08] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:12:08] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 19:12:11] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:12:11] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 19:21:40] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 19:21:40] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 19:21:40] INFO in _internal:  * Restarting with stat
+[2025-06-07 19:21:41] WARNING in _internal:  * Debugger is active!
+[2025-06-07 19:21:41] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 19:21:51] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:21:51] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 19:21:55] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:21:55] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 19:25:16] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 19:25:16] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 19:25:16] INFO in _internal:  * Restarting with stat
+[2025-06-07 19:25:17] WARNING in _internal:  * Debugger is active!
+[2025-06-07 19:25:17] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 19:25:25] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:25:25] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 19:25:29] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:25:29] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 19:32:09] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 19:32:09] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 19:32:09] INFO in _internal:  * Restarting with stat
+[2025-06-07 19:32:09] WARNING in _internal:  * Debugger is active!
+[2025-06-07 19:32:09] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 19:32:23] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:32:23] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 19:32:27] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:32:27] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 19:33:44] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 19:33:44] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 19:33:44] INFO in _internal:  * Restarting with stat
+[2025-06-07 19:33:44] WARNING in _internal:  * Debugger is active!
+[2025-06-07 19:33:44] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 19:33:56] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:33:56] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 19:33:59] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:33:59] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 19:51:00] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 19:51:00] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 19:51:00] INFO in _internal:  * Restarting with stat
+[2025-06-07 19:51:01] WARNING in _internal:  * Debugger is active!
+[2025-06-07 19:51:01] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 19:51:16] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 19:51:16] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 19:51:16] INFO in _internal:  * Restarting with stat
+[2025-06-07 19:51:17] WARNING in _internal:  * Debugger is active!
+[2025-06-07 19:51:17] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 19:51:28] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:51:28] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 19:51:33] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:51:33] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 19:55:55] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 19:55:55] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 19:55:55] INFO in _internal:  * Restarting with stat
+[2025-06-07 19:55:56] WARNING in _internal:  * Debugger is active!
+[2025-06-07 19:55:56] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 19:56:07] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:56:07] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 19:56:11] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:56:11] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 19:58:27] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 19:58:27] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 19:58:27] INFO in _internal:  * Restarting with stat
+[2025-06-07 19:58:28] WARNING in _internal:  * Debugger is active!
+[2025-06-07 19:58:28] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 19:58:40] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:58:40] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 19:58:44] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 19:58:44] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 20:09:20] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 20:09:20] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 20:09:20] INFO in _internal:  * Restarting with stat
+[2025-06-07 20:09:20] WARNING in _internal:  * Debugger is active!
+[2025-06-07 20:09:20] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 20:09:27] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:09:27] "GET / HTTP/1.1" 200 -
+[2025-06-07 20:09:32] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:09:32] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 20:09:39] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:09:39] "GET /restaurants HTTP/1.1" 200 -
+[2025-06-07 20:09:43] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:09:43] "GET /reviews HTTP/1.1" 200 -
+[2025-06-07 20:09:44] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:09:44] "GET /history HTTP/1.1" 200 -
+[2025-06-07 20:13:03] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:13:03] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 20:13:40] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:13:40] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 20:33:28] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 20:33:28] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 20:33:28] INFO in _internal:  * Restarting with stat
+[2025-06-07 20:33:29] WARNING in _internal:  * Debugger is active!
+[2025-06-07 20:33:29] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 20:33:44] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:33:44] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 20:33:48] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:33:48] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 20:43:33] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 20:43:33] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 20:43:33] INFO in _internal:  * Restarting with stat
+[2025-06-07 20:43:34] WARNING in _internal:  * Debugger is active!
+[2025-06-07 20:43:34] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 20:43:43] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:43:43] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 20:43:47] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:43:47] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 20:49:28] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 20:49:28] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 20:49:28] INFO in _internal:  * Restarting with stat
+[2025-06-07 20:49:28] WARNING in _internal:  * Debugger is active!
+[2025-06-07 20:49:28] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 20:49:39] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:49:39] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 20:49:47] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:49:47] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 20:58:55] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 20:58:55] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 20:58:55] INFO in _internal:  * Restarting with stat
+[2025-06-07 20:58:56] WARNING in _internal:  * Debugger is active!
+[2025-06-07 20:58:56] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 20:59:11] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:59:11] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 20:59:19] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 20:59:19] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 21:04:43] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 21:04:43] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 21:04:43] INFO in _internal:  * Restarting with stat
+[2025-06-07 21:04:44] WARNING in _internal:  * Debugger is active!
+[2025-06-07 21:04:44] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 21:04:55] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:04:55] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 21:04:58] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:04:58] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 21:16:10] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 21:16:10] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 21:16:10] INFO in _internal:  * Restarting with stat
+[2025-06-07 21:16:10] WARNING in _internal:  * Debugger is active!
+[2025-06-07 21:16:10] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 21:27:39] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 21:27:39] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 21:27:39] INFO in _internal:  * Restarting with stat
+[2025-06-07 21:27:40] WARNING in _internal:  * Debugger is active!
+[2025-06-07 21:27:40] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 21:27:50] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:27:50] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 21:27:57] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 21:27:58] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:27:58] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 21:37:13] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 21:37:13] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 21:37:13] INFO in _internal:  * Restarting with stat
+[2025-06-07 21:37:14] WARNING in _internal:  * Debugger is active!
+[2025-06-07 21:37:14] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 21:37:32] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:37:32] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 21:37:42] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 21:37:42] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:37:42] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 21:41:46] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 21:41:46] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 21:41:46] INFO in _internal:  * Restarting with stat
+[2025-06-07 21:41:46] WARNING in _internal:  * Debugger is active!
+[2025-06-07 21:41:46] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 21:41:58] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:41:58] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 21:42:13] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 21:42:13] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:42:13] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 21:46:27] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 21:46:27] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 21:46:27] INFO in _internal:  * Restarting with stat
+[2025-06-07 21:46:28] WARNING in _internal:  * Debugger is active!
+[2025-06-07 21:46:28] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 21:46:41] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:46:41] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 21:46:53] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 21:46:53] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:46:53] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 21:54:12] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.94:5000
+[2025-06-07 21:54:12] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-07 21:54:12] INFO in _internal:  * Restarting with stat
+[2025-06-07 21:54:13] WARNING in _internal:  * Debugger is active!
+[2025-06-07 21:54:13] INFO in _internal:  * Debugger PIN: 857-824-700
+[2025-06-07 21:54:25] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:54:25] "GET /chat HTTP/1.1" 200 -
+[2025-06-07 21:54:34] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 21:54:34] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 21:54:34] "POST /api/chat HTTP/1.1" 200 -
+[2025-06-07 22:24:44] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-06-07 22:24:44] INFO in _internal: 127.0.0.1 - - [07/Jun/2025 22:24:44] "POST /api/chat HTTP/1.1" 200 -

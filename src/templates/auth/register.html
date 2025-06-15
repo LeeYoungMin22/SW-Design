@@ -1,0 +1,169 @@
+# register.html 템플릿
+register_template = '''
+{% extends "base.html" %}
+{% block title %}FOODI 회원가입{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title mb-0">
+                        <i class="fas fa-user-plus"></i> FOODI 회원가입
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <!-- Flash 메시지 -->
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ 'danger' if category == 'error' else 'success' }} alert-dismissible fade show">
+                                    {{ message }}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+
+                    <form method="POST" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">사용자명 *</label>
+                            <input type="text" class="form-control" id="username" name="username" 
+                                   required minlength="3" maxlength="50"
+                                   placeholder="3-50자 사이로 입력해주세요">
+                            <div class="invalid-feedback">사용자명은 3-50자 사이여야 합니다.</div>
+                            <div id="username-feedback" class="form-text"></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">이메일 *</label>
+                            <input type="email" class="form-control" id="email" name="email" 
+                                   required placeholder="example@email.com">
+                            <div class="invalid-feedback">올바른 이메일 주소를 입력해주세요.</div>
+                            <div id="email-feedback" class="form-text"></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">비밀번호 *</label>
+                            <input type="password" class="form-control" id="password" name="password" 
+                                   required minlength="8"
+                                   placeholder="영문, 숫자 포함 8자 이상">
+                            <div class="form-text">비밀번호는 영문자와 숫자를 포함하여 8자 이상이어야 합니다.</div>
+                            <div class="invalid-feedback">비밀번호는 8자 이상이어야 합니다.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="location" class="form-label">주요 활동 지역</label>
+                            <select class="form-select" id="location" name="location">
+                                <option value="대구 달서구" selected>대구 달서구 (전체)</option>
+                                <option value="성서동">성서동</option>
+                                <option value="월배동">월배동</option>
+                                <option value="상인동">상인동</option>
+                                <option value="감삼동">감삼동</option>
+                                <option value="본리동">본리동</option>
+                                <option value="죽전동">죽전동</option>
+                            </select>
+                            <div class="form-text">맛집 추천 시 기본 검색 지역으로 사용됩니다.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="preferred_radius" class="form-label">검색 반경 (km)</label>
+                            <select class="form-select" id="preferred_radius" name="preferred_radius">
+                                <option value="1">1km</option>
+                                <option value="3">3km</option>
+                                <option value="5" selected>5km</option>
+                                <option value="10">10km</option>
+                                <option value="20">20km</option>
+                            </select>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-user-plus"></i> 회원가입
+                            </button>
+                        </div>
+                    </form>
+
+                    <hr class="my-4">
+                    <div class="text-center">
+                        <p class="mb-0">이미 계정이 있으신가요? 
+                            <a href="{{ url_for('auth.login') }}" class="text-primary">로그인</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// 실시간 중복 확인
+document.getElementById('username').addEventListener('blur', function() {
+    checkUsername(this.value);
+});
+
+document.getElementById('email').addEventListener('blur', function() {
+    checkEmail(this.value);
+});
+
+function checkUsername(username) {
+    if (username.length < 3) return;
+    
+    fetch('/auth/api/check-username', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({username: username})
+    })
+    .then(response => response.json())
+    .then(data => {
+        const feedback = document.getElementById('username-feedback');
+        if (data.available) {
+            feedback.className = 'form-text text-success';
+            feedback.textContent = data.message;
+        } else {
+            feedback.className = 'form-text text-danger';
+            feedback.textContent = data.message;
+        }
+    });
+}
+
+function checkEmail(email) {
+    if (!email) return;
+    
+    fetch('/auth/api/check-email', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({email: email})
+    })
+    .then(response => response.json())
+    .then(data => {
+        const feedback = document.getElementById('email-feedback');
+        if (data.available) {
+            feedback.className = 'form-text text-success';
+            feedback.textContent = data.message;
+        } else {
+            feedback.className = 'form-text text-danger';
+            feedback.textContent = data.message;
+        }
+    });
+}
+
+// Bootstrap form validation
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+</script>
+{% endblock %}

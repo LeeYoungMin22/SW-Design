@@ -1,0 +1,711 @@
+{% extends "base.html" %}
+
+{% block title %}추천 이력 - FOODI{% endblock %}
+
+{% block extra_css %}
+<style>
+    .page-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 80px 0 60px;
+    }
+
+    .history-stats {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 20px;
+        position: relative;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .stat-label {
+        color: #6c757d;
+        font-weight: 500;
+    }
+
+    .stat-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 2rem;
+        opacity: 0.1;
+    }
+
+    .filter-tabs {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .nav-pills .nav-link {
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-weight: 500;
+        color: #6c757d;
+        transition: all 0.3s ease;
+    }
+
+    .nav-pills .nav-link.active {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+    }
+
+    .recommendation-item {
+        background: white;
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .recommendation-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .recommendation-item.visited {
+        border-left: 5px solid #28a745;
+    }
+
+    .recommendation-item.not-visited {
+        border-left: 5px solid #ffc107;
+    }
+
+    .recommendation-header {
+        display: flex;
+        justify-content: between;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+
+    .restaurant-info {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .restaurant-name {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .restaurant-category {
+        display: inline-block;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .recommendation-reason {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 15px 0;
+        border-left: 4px solid #667eea;
+    }
+
+    .recommendation-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .recommendation-date {
+        color: #6c757d;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .status-badge {
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .status-badge.visited {
+        background: #d4edda;
+        color: #155724;
+    }
+
+    .status-badge.not-visited {
+        background: #fff3cd;
+        color: #856404;
+    }
+
+    .status-badge.planning {
+        background: #d1ecf1;
+        color: #0c5460;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+
+    .btn-action {
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        border: 1px solid #dee2e6;
+        background: white;
+        color: #6c757d;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .btn-action:hover {
+        background: #667eea;
+        color: white;
+        border-color: #667eea;
+    }
+
+    .btn-action.danger:hover {
+        background: #dc3545;
+        border-color: #dc3545;
+    }
+
+    .satisfaction-rating {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .satisfaction-star {
+        color: #ddd;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
+
+    .satisfaction-star.active {
+        color: #ffc107;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 80px 20px;
+        color: #6c757d;
+    }
+
+    .empty-state i {
+        font-size: 5rem;
+        margin-bottom: 20px;
+        color: #dee2e6;
+    }
+
+    .search-filter {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .timeline-indicator {
+        position: absolute;
+        left: -10px;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #667eea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+        .recommendation-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .recommendation-meta {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .action-buttons {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-5 fw-bold mb-4">
+                    <i class="fas fa-history me-3"></i>AI 추천 이력
+                </h1>
+                <p class="lead mb-0">
+                    FOODI AI가 추천한 맛집들의 방문 이력을 관리하고 피드백을 남겨보세요
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Statistics -->
+    <!-- Search and Filter -->
+    <div class="search-filter">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" class="form-control" id="searchInput" 
+                           placeholder="식당명으로 검색...">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <select class="form-select" id="categoryFilter">
+                    <option value="">전체 카테고리</option>
+                    <option value="한식">한식</option>
+                    <option value="중식">중식</option>
+                    <option value="일식">일식</option>
+                    <option value="양식">양식</option>
+                    <option value="치킨">치킨</option>
+                    <option value="피자">피자</option>
+                    <option value="카페">카페</option>
+                    <option value="기타">기타</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs">
+        <ul class="nav nav-pills justify-content-center" id="statusTabs">
+            <li class="nav-item">
+                <button class="nav-link active" data-filter="all">
+                    <i class="fas fa-list me-2"></i>전체
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-filter="not-visited">
+                    <i class="fas fa-clock me-2"></i>방문 예정
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-filter="visited">
+                    <i class="fas fa-check me-2"></i>방문 완료
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Recommendations List -->
+        <div id="recommendationsList">
+        <!-- Sample Recommendation 1 -->
+        <div class="recommendation-item visited" data-status="visited" data-category="한식">
+            <div class="timeline-indicator">1</div>
+            <div class="recommendation-header">
+                <div class="restaurant-info">
+                    <div class="restaurant-name">한우마당</div>
+                    <span class="restaurant-category">한식</span>
+                    <div class="text-muted small">
+                        <i class="fas fa-map-marker-alt me-1"></i>대구 달서구 성서로 123
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-reason">
+                <strong>AI 추천 이유:</strong> 
+                "가족 모임에 적합한 한식당을 찾고 계시는군요! ..."
+            </div>
+
+            <div class="recommendation-meta">
+                <div class="recommendation-date">
+                    <i class="fas fa-clock me-2"></i>2024년 6월 1일 추천
+                </div>
+                <span class="status-badge visited">방문 완료</span>
+            </div>
+
+            <div class="satisfaction-rating">
+                <span class="me-2">만족도:</span>
+                <i class="fas fa-star satisfaction-star active"></i>
+                <i class="fas fa-star satisfaction-star active"></i>
+                <i class="fas fa-star satisfaction-star active"></i>
+                <i class="fas fa-star satisfaction-star active"></i>
+                <i class="far fa-star satisfaction-star"></i>
+                <span class="ms-2 text-muted small">(4.0/5.0)</span>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn-action" onclick="writeReview(1)">
+                    <i class="fas fa-edit me-1"></i>리뷰 작성
+                </button>
+                <button class="btn-action" onclick="findSimilar(1)">
+                    <i class="fas fa-search me-1"></i>비슷한 곳
+                </button>
+                <button class="btn-action danger" onclick="removeItem(1)">
+                    <i class="fas fa-trash me-1"></i>삭제
+                </button>
+            </div>
+        </div>
+
+        <!-- Sample Recommendation 2 -->
+         <div class="recommendation-item not-visited" data-status="not-visited" data-category="이탈리안">
+            <div class="timeline-indicator">2</div>
+            <div class="recommendation-header">
+                <div class="restaurant-info">
+                    <div class="restaurant-name">파스타팩토리</div>
+                    <span class="restaurant-category">이탈리안</span>
+                    <div class="text-muted small">
+                        <i class="fas fa-map-marker-alt me-1"></i>대구 달서구 월배로 456
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-reason">
+                <strong>AI 추천 이유:</strong> 
+                "오늘 데이트를 위한 분위기 좋은 이탈리안 레스토랑을 찾고 계시는군요! ..."
+            </div>
+
+            <div class="recommendation-meta">
+                <div class="recommendation-date">
+                    <i class="fas fa-clock me-2"></i>2024년 6월 3일 추천
+                </div>
+                <span class="status-badge not-visited">방문 예정</span>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn-action" onclick="markAsVisited(2)">
+                    <i class="fas fa-check me-1"></i>방문 완료
+                </button>
+                <button class="btn-action danger" onclick="removeItem(2)">
+                    <i class="fas fa-trash me-1"></i>삭제
+                </button>
+            </div>
+        </div>
+
+            
+            <div class="action-buttons">
+                <button class="btn-action" onclick="markAsVisited(2)">
+                    <i class="fas fa-check me-1"></i>방문 완료
+                </button>
+                <button class="btn-action" onclick="viewDetails(2)">
+                    <i class="fas fa-info-circle me-1"></i>상세보기
+                </button>
+                <button class="btn-action" onclick="addToCalendar(2)">
+                    <i class="fas fa-calendar-plus me-1"></i>일정 추가
+                </button>
+                <button class="btn-action danger" onclick="removeItem(2)">
+                    <i class="fas fa-trash me-1"></i>삭제
+                </button>
+            </div>
+        </div>
+
+    <!-- Empty State (숨겨짐) -->
+    <div class="empty-state" id="emptyState" style="display: none;">
+        <i class="fas fa-history"></i>
+        <h4 class="mb-3">추천 이력이 없습니다</h4>
+        <p class="lead text-muted mb-4">
+            아직 AI로부터 맛집 추천을 받지 않으셨네요.<br>
+            지금 바로 맞춤 추천을 받아보세요!
+        </p>
+        <a href="{{ url_for('main.chat_page') }}" class="btn btn-primary btn-lg">
+            <i class="fas fa-robot me-2"></i>AI 추천 받기
+        </a>
+    </div>
+
+    <!-- Load More Button -->
+    <div class="text-center mt-4">
+        <button class="btn btn-outline-primary" id="loadMoreBtn">
+            <i class="fas fa-plus me-2"></i>더 많은 이력 보기
+        </button>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 필터 탭 기능
+    const filterTabs = document.querySelectorAll('#statusTabs .nav-link');
+    const recommendations = document.querySelectorAll('.recommendation-item');
+    
+    filterTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            // 활성 탭 변경
+            filterTabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            
+            const filter = this.dataset.filter;
+            filterRecommendations(filter);
+        });
+    });
+    
+    // 검색 기능
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    
+    searchInput.addEventListener('input', filterRecommendations);
+    categoryFilter.addEventListener('change', filterRecommendations);
+    
+    function filterRecommendations(statusFilter = null) {
+        const searchTerm = searchInput.value.toLowerCase();
+        const categoryTerm = categoryFilter.value;
+        const activeTab = document.querySelector('#statusTabs .nav-link.active');
+        const currentStatusFilter = statusFilter || activeTab.dataset.filter;
+        
+        let visibleCount = 0;
+        
+        recommendations.forEach(item => {
+            const restaurantName = item.querySelector('.restaurant-name').textContent.toLowerCase();
+            const category = item.dataset.category;
+            const status = item.dataset.status;
+            
+            let showItem = true;
+            
+            // 텍스트 검색 필터
+            if (searchTerm && !restaurantName.includes(searchTerm)) {
+                showItem = false;
+            }
+            
+            // 카테고리 필터
+            if (categoryTerm && category !== categoryTerm) {
+                showItem = false;
+            }
+            
+            // 상태 필터
+            if (currentStatusFilter !== 'all' && status !== currentStatusFilter) {
+                showItem = false;
+            }
+            
+            if (showItem) {
+                item.style.display = 'block';
+                visibleCount++;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+        
+        // 빈 상태 표시
+        const emptyState = document.getElementById('emptyState');
+        const recommendationsList = document.getElementById('recommendationsList');
+        
+        if (visibleCount === 0) {
+            recommendationsList.style.display = 'none';
+            emptyState.style.display = 'block';
+        } else {
+            recommendationsList.style.display = 'block';
+            emptyState.style.display = 'none';
+        }
+    }
+    
+    // 더 보기 버튼
+    document.getElementById('loadMoreBtn').addEventListener('click', function() {
+        const btn = this;
+        showLoading(btn);
+        
+        setTimeout(() => {
+            hideLoading(btn, '<i class="fas fa-plus me-2"></i>더 많은 이력 보기');
+            showAlert('모든 추천 이력을 불러왔습니다.', 'info');
+            btn.style.display = 'none';
+        }, 1000);
+    });
+});
+
+// 액션 함수들
+function markAsVisited(id) {
+    const item = document.querySelector(`.recommendation-item:nth-child(${id})`);
+    if (!item) return;
+
+    // 상태 클래스 변경
+    item.classList.remove('not-visited', 'planning');
+    item.classList.add('visited');
+    item.dataset.status = 'visited';
+
+    // 상태 배지 변경
+    const badge = item.querySelector('.status-badge');
+    if (badge) {
+        badge.className = 'status-badge visited';
+        badge.textContent = '방문 완료';
+    }
+
+    // 기존 action-buttons 내용 제거
+    const actionsDiv = item.querySelector('.action-buttons');
+    if (actionsDiv) {
+        actionsDiv.innerHTML = '';  // 기존 버튼 제거
+
+        // 리뷰 작성 버튼
+        const reviewBtn = document.createElement('button');
+        reviewBtn.className = 'btn-action';
+        reviewBtn.innerHTML = `<i class="fas fa-edit me-1"></i>리뷰 작성`;
+        reviewBtn.onclick = function () {
+            writeReview(id);
+        };
+
+        // 삭제 버튼
+        const deleteBtn = document.createElement('button');
+        deleteBtn.className = 'btn-action danger';
+        deleteBtn.innerHTML = `<i class="fas fa-trash me-1"></i>삭제`;
+        deleteBtn.onclick = function () {
+            removeItem(id);
+        };
+
+        // 버튼 추가
+        actionsDiv.appendChild(reviewBtn);
+        actionsDiv.appendChild(deleteBtn);
+    }
+
+    // 만족도 별점 추가
+    const satisfactionDiv = document.createElement('div');
+    satisfactionDiv.className = 'satisfaction-rating';
+    satisfactionDiv.innerHTML = `
+        <span class="me-2">만족도:</span>
+        <i class="fas fa-star satisfaction-star" data-rating="1"></i>
+        <i class="fas fa-star satisfaction-star" data-rating="2"></i>
+        <i class="fas fa-star satisfaction-star" data-rating="3"></i>
+        <i class="fas fa-star satisfaction-star" data-rating="4"></i>
+        <i class="fas fa-star satisfaction-star" data-rating="5"></i>
+        <span class="ms-2 text-muted small">평점을 남겨주세요</span>
+    `;
+    item.insertBefore(satisfactionDiv, actionsDiv);
+
+    // 별점 클릭 이벤트
+    satisfactionDiv.querySelectorAll('.satisfaction-star').forEach(star => {
+        star.addEventListener('click', function () {
+            const rating = parseInt(this.dataset.rating);
+            const stars = satisfactionDiv.querySelectorAll('.satisfaction-star');
+
+            stars.forEach((s, index) => {
+                if (index < rating) {
+                    s.classList.remove('far');
+                    s.classList.add('fas', 'active');
+                } else {
+                    s.classList.remove('fas', 'active');
+                    s.classList.add('far');
+                }
+            });
+
+            satisfactionDiv.querySelector('.text-muted').textContent = `(${rating}.0/5.0)`;
+            showAlert('만족도가 저장되었습니다!', 'success');
+        });
+    });
+
+    showAlert('방문 완료로 표시되었습니다!', 'success');
+}
+
+
+function viewDetails(id) {
+    showAlert('상세 정보 페이지로 이동합니다.', 'info');
+    // 실제로는 상세 페이지로 이동
+}
+
+function writeReview(id) {
+    if (confirm('리뷰 작성 페이지로 이동하시겠습니까?')) {
+        window.location.href = '/reviews';
+    }
+}
+
+function findSimilar(id) {
+    showAlert('비슷한 맛집을 찾고 있습니다...', 'info');
+    // 실제로는 AI 추천 페이지로 이동하여 비슷한 추천 요청
+}
+
+function addToCalendar(id) {
+    showAlert('일정이 캘린더에 추가되었습니다!', 'success');
+    // 실제로는 캘린더 앱과 연동
+}
+
+function addToWishlist(id) {
+    showAlert('찜 목록에 추가되었습니다!', 'success');
+    // 실제로는 찜 목록 데이터베이스에 저장
+}
+
+function removeItem(id) {
+    if (confirm('이 추천 이력을 삭제하시겠습니까?')) {
+        const item = document.querySelector(`.recommendation-item:nth-child(${id})`);
+        if (item) {
+            item.style.transition = 'all 0.3s ease';
+            item.style.opacity = '0';
+            item.style.transform = 'translateX(-100%)';
+            
+            setTimeout(() => {
+                item.remove();
+                showAlert('추천 이력이 삭제되었습니다.', 'info');
+            }, 300);
+        }
+    }
+}
+
+// 유틸리티 함수들
+function showAlert(message, type = 'info') {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+    alertDiv.style.top = '20px';
+    alertDiv.style.right = '20px';
+    alertDiv.style.zIndex = '9999';
+    alertDiv.style.minWidth = '300px';
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    
+    document.body.appendChild(alertDiv);
+    
+    setTimeout(() => {
+        alertDiv.remove();
+    }, 5000);
+}
+
+function showLoading(element) {
+    const originalText = element.innerHTML;
+    element.innerHTML = '<span class="loading-spinner me-2"></span>로딩 중...';
+    element.disabled = true;
+    element.dataset.originalText = originalText;
+}
+
+function hideLoading(element, newText = null) {
+    const originalText = newText || element.dataset.originalText;
+    element.innerHTML = originalText;
+    element.disabled = false;
+    delete element.dataset.originalText;
+}
+</script>
+{% endblock %}

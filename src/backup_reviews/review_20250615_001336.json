@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-06-15T00:13:36.649933",
+  "user_id": 5,
+  "restaurant_name": "가족뜰",
+  "restaurant_address": "가족뜰_기본주소",
+  "rating": 5,
+  "content": "asjdhjkvbnxcmvbn",
+  "original_data": {
+    "restaurant_name": "가족뜰 ",
+    "visit_date": "2025-06-15",
+    "rating": "5",
+    "content": "asjdhjkvbnxcmvbn"
+  },
+  "error": "database is locked",
+  "attempted_db_file": "/home/youngmin/anaconda3/envs/foodi_chatbot/src/src/data/database/foodi.db",
+  "working_directory": "/home/youngmin/anaconda3/envs/foodi_chatbot/src"
+}

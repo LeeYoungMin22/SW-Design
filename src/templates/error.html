@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}오류 {{ error_code }} - FOODI{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center min-vh-100 align-items-center">
+        <div class="col-md-6 text-center">
+            <div class="error-container">
+                <h1 class="display-1 fw-bold text-primary">{{ error_code }}</h1>
+                <h2 class="mb-4">앗! 문제가 발생했어요</h2>
+                <p class="lead text-muted mb-4">{{ error_message }}</p>
+                
+                {% if error_code == 404 %}
+                    <div class="mb-4">
+                        <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                        <p>찾고 계신 페이지가 존재하지 않거나 이동되었을 수 있습니다.</p>
+                    </div>
+                {% elif error_code == 500 %}
+                    <div class="mb-4">
+                        <i class="fas fa-tools fa-3x text-warning mb-3"></i>
+                        <p>서버에 일시적인 문제가 발생했습니다. 잠시 후 다시 시도해주세요.</p>
+                    </div>
+                {% endif %}
+                
+                <div class="mt-4">
+                    <a href="{{ url_for('main.index') }}" class="btn btn-primary btn-lg me-3">
+                        <i class="fas fa-home me-2"></i>홈으로 가기
+                    </a>
+                    <a href="{{ url_for('main.chat_page') }}" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-robot me-2"></i>AI 추천 받기
+                    </a>
+                </div>
+                
+                <div class="mt-5">
+                    <small class="text-muted">
+                        문제가 지속되면 support@foodi.com으로 문의해주세요.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.error-container {
+    padding: 2rem;
+}
+
+.display-1 {
+    font-size: 8rem;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 5rem;
+    }
+}
+</style>
+{% endblock %}
